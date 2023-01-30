@@ -63,7 +63,7 @@ main {
 }
 
 .center {
-  background-color: orange;
+  background-color: #161616;
   width: 64%;
 }
 
@@ -147,15 +147,10 @@ footer .volume {
 
 #topbar {
   width: 100%;
-  height: 8%;
+  height: 7%;
   color: white;
-  background-color: black;
-  font-size: 0.7em;
+  background-color: #161616;
 }
-
-#topbar {
-  width: 100%;
-  height: 3%;
-  color: white;
-  background-color: black;
+#topbar ion-icon {
+  font-size: 0, 9em;
 }/*# sourceMappingURL=style.css.map */
