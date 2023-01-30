@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  height: 100%;
+  font-family: "roboto", sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+ion-icon {
+  font-size: 27px;
+}
+
+main {
+  display: flex;
+  height: 100%;
+  color: grey;
+}
+
+#icon-alone {
+  list-style-type: none;
+}

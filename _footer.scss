@@ -1,0 +1,35 @@
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10%;
+  position: sticky;
+  z-index: 10;
+  bottom: 0;
+  background-color: blue;
+  color: white;
+  .song {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    .song-desc {
+      margin: 0.7em;
+      p {
+        font-size: 0.7em;
+        margin: 0;
+      }
+      h5 {
+        font-size: 1.3em;
+        font-weight: 300;
+        margin: 0;
+      }
+    }
+  }
+  .like {
+    margin-left: 5em;
+  }
+  .volume {
+    display: flex;
+    margin-right: 2em;
+  }
+}
