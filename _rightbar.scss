@@ -1,35 +1,40 @@
-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 10%;
-  position: sticky;
-  z-index: 10;
-  bottom: 0;
-  background-color: blue;
-  color: white;
-  .song {
-    margin-left: 10px;
+//inizio rightbar
+.right {
+  background-color: black;
+  padding-top: 10px;
+  .friends {
     display: flex;
+    justify-content: space-around;
     align-items: center;
-    .song-desc {
-      margin: 0.7em;
-      p {
-        font-size: 0.7em;
-        margin: 0;
-      }
-      h5 {
-        font-size: 1.3em;
-        font-weight: 300;
-        margin: 0;
+    h5 {
+      font-weight: 700;
+    }
+    ion-icon {
+      font-size: 22px;
+      &:hover {
+        cursor: pointer;
+        color: white;
       }
     }
   }
-  .like {
-    margin-left: 5em;
-  }
-  .volume {
-    display: flex;
-    margin-right: 2em;
+
+  .container-friend {
+    margin-top: 15px;
+
+    .card-friend {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 30px;
+      .body-card {
+        h5,
+        p {
+          margin: 0;
+        }
+      }
+      p {
+        margin: 0;
+        font-size: small;
+      }
+    }
   }
 }

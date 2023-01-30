@@ -143,4 +143,19 @@ footer .like {
 footer .volume {
   display: flex;
   margin-right: 2em;
+}
+
+#topbar {
+  width: 100%;
+  height: 8%;
+  color: white;
+  background-color: black;
+  font-size: 0.7em;
+}
+
+#topbar {
+  width: 100%;
+  height: 3%;
+  color: white;
+  background-color: black;
 }/*# sourceMappingURL=style.css.map */
