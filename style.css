@@ -127,6 +127,7 @@ footer .song {
   align-items: center;
 }
 footer .song ion-icon {
+  cursor: pointer;
   margin: 0 5px;
   opacity: 0.5;
 }
@@ -146,6 +147,7 @@ footer .song .song-desc h5 {
   margin: 0;
 }
 footer .player ion-icon {
+  cursor: pointer;
   margin: 0 5px;
   opacity: 0.5;
 }
@@ -160,6 +162,7 @@ footer .volume {
   margin-right: 2em;
 }
 footer .volume ion-icon {
+  cursor: pointer;
   margin: 0 8px;
   opacity: 0.5;
 }
