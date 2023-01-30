@@ -188,6 +188,9 @@ footer .volume ion-icon:hover {
   color: gray;
   text-align: center;
 }
+#topbar ion-icon:hover {
+  color: white;
+}
 
 #absolute ion-icon {
   cursor: pointer;
@@ -203,8 +206,58 @@ footer .volume ion-icon:hover {
   border-radius: 30px;
   padding-left: 23px;
   background-color: black;
-  color: white;
+  color: gray;
   border: none;
   font-size: 0.6em;
   margin-bottom: 40px;
+}
+#absolute #tendina:hover {
+  cursor: pointer;
+  color: white;
+}
+
+.album-cont {
+  margin-left: 20px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  margin-left: 30px;
+  color: white;
+}
+
+.paragrafoAlbum {
+  display: flex;
+  align-items: center;
+}
+
+.icons {
+  display: flex;
+  width: 40%;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+}
+.icons .bigger {
+  font-size: 4em;
+}
+.icons .bigger:hover {
+  color: green;
+}
+.icons .heart {
+  transform: scale(1.3);
+}
+.icons .heart:hover {
+  cursor: pointer;
+  color: white;
+}
+.icons .arrow:hover {
+  color: white;
+  cursor: pointer;
+}
+.icons .dot:hover {
+  color: white;
 }/*# sourceMappingURL=style.css.map */
