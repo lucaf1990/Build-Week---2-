@@ -78,7 +78,7 @@ main {
 }
 .right .friends {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 .right .friends h5 {
@@ -99,9 +99,14 @@ main {
   justify-content: space-around;
   margin-bottom: 30px;
 }
-.right .container-friend .card-friend .body-card h5,
+.right .container-friend .card-friend .body-card ion icon h5,
 .right .container-friend .card-friend .body-card p {
   margin: 0;
+}
+.right .container-friend .card-friend .body-card ion icon h5:hover,
+.right .container-friend .card-friend .body-card p:hover {
+  cursor: pointer;
+  color: white;
 }
 .right .container-friend .card-friend p {
   margin: 0;
