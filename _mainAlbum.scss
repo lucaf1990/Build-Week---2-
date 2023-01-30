@@ -1,0 +1,48 @@
+.album-cont {
+  margin-left: 20px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  display: flex;
+  margin-left: 30px;
+  color: white;
+}
+
+.paragrafoAlbum {
+  display: flex;
+  align-items: center;
+}
+.icons {
+  display: flex;
+  width: 40%;
+  justify-content: space-around;
+  align-items: center;
+
+  margin-top: 30px;
+  .bigger {
+    font-size: 4em;
+    &:hover {
+      color: green;
+    }
+  }
+  .heart {
+    transform: scale(1.3);
+    &:hover {
+      cursor: pointer;
+      color: white;
+    }
+  }
+  .arrow {
+    &:hover {
+      color: white;
+      cursor: pointer;
+    }
+  }
+  .dot {
+    &:hover {
+      color: white;
+    }
+  }
+}
