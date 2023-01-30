@@ -1,0 +1,48 @@
+.container {
+  height: 100%;
+}
+.container .artist {
+  height: 30%;
+  color: white;
+  background-color: red;
+}
+
+.play_like {
+  margin: 1em;
+  display: flex;
+  align-items: center;
+}
+.play_like .play,
+.play_like .dots {
+  color: grey;
+  margin-right: 0.5em;
+  cursor: pointer;
+}
+.play_like button {
+  padding: 10px 20px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  margin-right: 2em;
+  border-radius: 5px;
+}
+.play_like button:hover {
+  cursor: pointer;
+}
+
+.play {
+  font-size: 4em;
+}
+.play:hover {
+  color: green;
+}
+
+.dots:hover {
+  color: white;
+}
+
+.canzoni_artista {
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+}/*# sourceMappingURL=main_artists.css.map */
