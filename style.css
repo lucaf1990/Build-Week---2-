@@ -117,13 +117,18 @@ footer {
   position: sticky;
   z-index: 10;
   bottom: 0;
-  background-color: blue;
+  background-color: #161616;
+  border-top: 0.5px solid grey;
   color: white;
 }
 footer .song {
   margin-left: 10px;
   display: flex;
   align-items: center;
+}
+footer .song ion-icon {
+  margin: 0 5px;
+  opacity: 0.5;
 }
 footer .song .song-desc {
   margin: 0.7em;
@@ -137,12 +142,20 @@ footer .song .song-desc h5 {
   font-weight: 300;
   margin: 0;
 }
+footer .player ion-icon {
+  margin: 0 5px;
+  opacity: 0.5;
+}
 footer .like {
   margin-left: 5em;
 }
 footer .volume {
   display: flex;
   margin-right: 2em;
+}
+footer .volume ion-icon {
+  margin: 0 8px;
+  opacity: 0.5;
 }
 
 #topbar {
