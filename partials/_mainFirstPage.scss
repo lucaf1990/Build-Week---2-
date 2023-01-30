@@ -1,33 +1,70 @@
 .container {
-  margin: 10px;
+  overflow: scroll;
+  height: 100%;
+
+  &::-webkit-scrollbar {
+    width: 10px;
+    background-color: #121212;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: grey;
+    border-radius: 10px;
+  }
+
+  &::-moz-scrollbar {
+    width: 10px;
+    background-color: #121212;
+  }
+
+  &::-moz-scrollbar-thumb {
+    background-color: grey;
+    border-radius: 10px;
+  }
+  // fine stile container
+
+  .titles {
+    margin: 15px 10px 0;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+  // prima sezione
   .firstSection {
+    margin: 0 10px;
     display: flex;
     justify-content: space-between;
-
     background: rgb(0, 0, 0);
     background: linear-gradient(
       15deg,
       rgba(0, 0, 0, 1) 0%,
       rgba(74, 73, 73, 1) 100%
     );
+    &:hover {
+      transform: scale(1.02);
+    }
     .bodyFirstSection {
       display: flex;
       img {
         cursor: pointer;
         margin: 10px;
       }
+      p {
+        margin: 15px 0;
+        font-weight: 700;
+      }
       h1 {
         cursor: pointer;
-        margin: 0;
-        margin-top: 5px;
+        margin: 15px 0;
+        font-weight: 900;
         &:hover {
           color: white;
         }
       }
       h4 {
         cursor: pointer;
-        margin: 0;
-        margin-bottom: 10px;
+        margin: 10px 0 15px;
+
         &:hover {
           color: white;
         }
@@ -35,7 +72,7 @@
 
       h6 {
         cursor: pointer;
-        margin: 5px 0;
+        margin: 20px 0 10px;
         &:hover {
           color: white;
         }
@@ -44,7 +81,7 @@
         display: flex;
         align-items: center;
         button {
-          margin: 5px;
+          margin: 0 8px;
           background-color: transparent;
           color: white;
           border-radius: 6em;
@@ -58,7 +95,7 @@
           }
         }
         ion-icon {
-          margin: 10px;
+          margin: 0 10px;
           cursor: pointer;
           &:hover {
             transform: scale(1.3);
@@ -68,7 +105,7 @@
     }
     button {
       cursor: pointer;
-      margin: 10px;
+      margin: 15px;
       background-color: transparent;
       color: gray;
       border-radius: 6em;
@@ -81,18 +118,56 @@
       }
     }
   }
+
+  // seconda sezione
   .secondSection {
+    margin: 0 10px;
     display: flex;
     flex-wrap: wrap;
     .card {
+      cursor: pointer;
       margin: 10px;
       width: 30%;
       display: flex;
       align-items: center;
       font-size: 10px;
       background-color: rgba(52, 47, 47, 0.83);
+      &:hover {
+        transform: scale(1.1);
+      }
       p {
         margin-left: 10px;
+      }
+    }
+  }
+
+  // terza sezione
+  .thirdSection {
+    margin: 0 10px;
+    display: flex;
+    .cards {
+      cursor: pointer;
+      margin: 10px;
+      margin-bottom: 5em;
+      height: 200px;
+      width: 20%;
+      background-color: #2f2b2b;
+      display: flex;
+      flex-direction: column;
+      border-radius: 1em;
+      &:hover {
+        transform: scale(1.1);
+        color: white;
+      }
+      img {
+        border-top-left-radius: 1em;
+        border-top-right-radius: 1em;
+      }
+      h5 {
+        margin: 10px 5px;
+      }
+      p {
+        margin: 0 5px;
       }
     }
   }

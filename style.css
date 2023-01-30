@@ -222,13 +222,40 @@ footer .volume ion-icon:hover {
 }
 
 .container {
-  margin: 10px;
+  overflow: scroll;
+  height: 100%;
+}
+.container::-webkit-scrollbar {
+  width: 10px;
+  background-color: #121212;
+}
+.container::-webkit-scrollbar-thumb {
+  background-color: grey;
+  border-radius: 10px;
+}
+.container::-moz-scrollbar {
+  width: 10px;
+  background-color: #121212;
+}
+.container::-moz-scrollbar-thumb {
+  background-color: grey;
+  border-radius: 10px;
+}
+.container .titles {
+  margin: 15px 10px 0;
+  color: white;
+  font-size: 20px;
+  margin-bottom: 0;
 }
 .container .firstSection {
+  margin: 0 10px;
   display: flex;
   justify-content: space-between;
   background: rgb(0, 0, 0);
   background: linear-gradient(15deg, rgb(0, 0, 0) 0%, rgb(74, 73, 73) 100%);
+}
+.container .firstSection:hover {
+  transform: scale(1.02);
 }
 .container .firstSection .bodyFirstSection {
   display: flex;
@@ -237,25 +264,28 @@ footer .volume ion-icon:hover {
   cursor: pointer;
   margin: 10px;
 }
+.container .firstSection .bodyFirstSection p {
+  margin: 15px 0;
+  font-weight: 700;
+}
 .container .firstSection .bodyFirstSection h1 {
   cursor: pointer;
-  margin: 0;
-  margin-top: 5px;
+  margin: 15px 0;
+  font-weight: 900;
 }
 .container .firstSection .bodyFirstSection h1:hover {
   color: white;
 }
 .container .firstSection .bodyFirstSection h4 {
   cursor: pointer;
-  margin: 0;
-  margin-bottom: 10px;
+  margin: 10px 0 15px;
 }
 .container .firstSection .bodyFirstSection h4:hover {
   color: white;
 }
 .container .firstSection .bodyFirstSection h6 {
   cursor: pointer;
-  margin: 5px 0;
+  margin: 20px 0 10px;
 }
 .container .firstSection .bodyFirstSection h6:hover {
   color: white;
@@ -265,7 +295,7 @@ footer .volume ion-icon:hover {
   align-items: center;
 }
 .container .firstSection .bodyFirstSection .buttonsSection button {
-  margin: 5px;
+  margin: 0 8px;
   background-color: transparent;
   color: white;
   border-radius: 6em;
@@ -279,7 +309,7 @@ footer .volume ion-icon:hover {
   transform: scale(1.3);
 }
 .container .firstSection .bodyFirstSection .buttonsSection ion-icon {
-  margin: 10px;
+  margin: 0 10px;
   cursor: pointer;
 }
 .container .firstSection .bodyFirstSection .buttonsSection ion-icon:hover {
@@ -287,7 +317,7 @@ footer .volume ion-icon:hover {
 }
 .container .firstSection button {
   cursor: pointer;
-  margin: 10px;
+  margin: 15px;
   background-color: transparent;
   color: gray;
   border-radius: 6em;
@@ -300,10 +330,12 @@ footer .volume ion-icon:hover {
   transform: scale(1.3);
 }
 .container .secondSection {
+  margin: 0 10px;
   display: flex;
   flex-wrap: wrap;
 }
 .container .secondSection .card {
+  cursor: pointer;
   margin: 10px;
   width: 30%;
   display: flex;
@@ -311,6 +343,38 @@ footer .volume ion-icon:hover {
   font-size: 10px;
   background-color: rgba(52, 47, 47, 0.83);
 }
+.container .secondSection .card:hover {
+  transform: scale(1.1);
+}
 .container .secondSection .card p {
   margin-left: 10px;
+}
+.container .thirdSection {
+  margin: 0 10px;
+  display: flex;
+}
+.container .thirdSection .cards {
+  cursor: pointer;
+  margin: 10px;
+  margin-bottom: 5em;
+  height: 200px;
+  width: 20%;
+  background-color: #2f2b2b;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1em;
+}
+.container .thirdSection .cards:hover {
+  transform: scale(1.1);
+  color: white;
+}
+.container .thirdSection .cards img {
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+}
+.container .thirdSection .cards h5 {
+  margin: 10px 5px;
+}
+.container .thirdSection .cards p {
+  margin: 0 5px;
 }/*# sourceMappingURL=style.css.map */
