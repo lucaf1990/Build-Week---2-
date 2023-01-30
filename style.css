@@ -130,6 +130,9 @@ footer .song ion-icon {
   margin: 0 5px;
   opacity: 0.5;
 }
+footer .song ion-icon:hover {
+  opacity: 1;
+}
 footer .song .song-desc {
   margin: 0.7em;
 }
@@ -146,6 +149,9 @@ footer .player ion-icon {
   margin: 0 5px;
   opacity: 0.5;
 }
+footer .player ion-icon:hover {
+  opacity: 1;
+}
 footer .like {
   margin-left: 5em;
 }
@@ -156,6 +162,9 @@ footer .volume {
 footer .volume ion-icon {
   margin: 0 8px;
   opacity: 0.5;
+}
+footer .volume ion-icon:hover {
+  opacity: 1;
 }
 
 #topbar {
