@@ -185,7 +185,7 @@ footer .volume ion-icon:hover {
   width: 95%;
   height: 7%;
   color: white;
-  background-color: #161616;
+  background-color: rgb(10, 8, 8);
 }
 #topbar ion-icon {
   cursor: pointer;
@@ -222,6 +222,10 @@ footer .volume ion-icon:hover {
 #absolute #tendina:hover {
   cursor: pointer;
   color: white;
+}
+
+.center {
+  background-color: rgb(10, 8, 8);
 }
 
 .container {
@@ -394,7 +398,7 @@ footer .volume ion-icon:hover {
   display: flex;
   flex-direction: column;
   align-content: space-around;
-  border-radius: 1em;
+  border-radius: 3px;
 }
 .container .thirdSection .cards:hover,
 .container .fourthSection .cards:hover {
@@ -404,8 +408,8 @@ footer .volume ion-icon:hover {
 }
 .container .thirdSection .cards img,
 .container .fourthSection .cards img {
-  border-top-left-radius: 1em;
-  border-top-right-radius: 1em;
+  border-radius: 5px;
+  margin: 10px;
 }
 .container .thirdSection .cards div,
 .container .fourthSection .cards div {
