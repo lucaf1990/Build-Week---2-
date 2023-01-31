@@ -1,4 +1,5 @@
 .container {
+  color: white;
   overflow: scroll;
   height: 100%;
 
@@ -40,7 +41,7 @@
       rgba(0, 0, 0, 1) 0%,
       rgba(74, 73, 73, 1) 100%
     );
-
+    border-radius: 0.3em;
     .bodyFirstSection {
       display: flex;
       img {
@@ -142,11 +143,16 @@
       display: flex;
       align-items: center;
       justify-content: flex-start;
+      border-radius: 0.3em;
       font-size: 10px;
       background-color: rgba(52, 47, 47, 0.83);
       &:hover {
         transform: scale(1.03);
         background-color: rgba(77, 71, 71, 0.882);
+      }
+      img {
+        border-top-left-radius: 0.3em;
+        border-bottom-left-radius: 0.3em;
       }
 
       div {

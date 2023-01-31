@@ -15,7 +15,7 @@ ion-icon {
 main {
   display: flex;
   height: 100%;
-  color: white;
+  color: grey;
 }
 
 #icon-alone {
@@ -223,6 +223,7 @@ footer .volume ion-icon:hover {
 }
 
 .container {
+  color: white;
   overflow: scroll;
   height: 100%;
 }
@@ -253,6 +254,7 @@ footer .volume ion-icon:hover {
   justify-content: space-between;
   background: rgb(0, 0, 0);
   background: linear-gradient(15deg, rgb(0, 0, 0) 0%, rgb(74, 73, 73) 100%);
+  border-radius: 0.3em;
 }
 .container .firstSection .bodyFirstSection {
   display: flex;
@@ -349,12 +351,17 @@ footer .volume ion-icon:hover {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  border-radius: 0.3em;
   font-size: 10px;
   background-color: rgba(52, 47, 47, 0.83);
 }
 .container .secondSection .card:hover {
   transform: scale(1.03);
   background-color: rgba(77, 71, 71, 0.882);
+}
+.container .secondSection .card img {
+  border-top-left-radius: 0.3em;
+  border-bottom-left-radius: 0.3em;
 }
 .container .secondSection .card div {
   display: flex;
