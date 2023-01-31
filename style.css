@@ -1,11 +1,11 @@
+html {
+  height: 100%;
+}
+
 body {
   margin: 0;
   height: 100%;
   font-family: "roboto", sans-serif;
-}
-
-html {
-  height: 100%;
 }
 
 ion-icon {
@@ -14,7 +14,7 @@ ion-icon {
 
 main {
   display: flex;
-  height: 100%;
+  height: 89.8%;
   color: grey;
 }
 
@@ -85,6 +85,7 @@ footer .volume ion-icon:hover {
 }
 
 .left {
+  font-size: 12px;
   align-items: center;
   background-color: black;
   width: 18%;
@@ -180,6 +181,7 @@ footer .volume ion-icon:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 1em;
   width: 95%;
   height: 7%;
   color: white;
@@ -249,7 +251,9 @@ footer .volume ion-icon:hover {
   font-size: 20px;
 }
 .container .firstSection {
+  height: 250px;
   margin: 0 10px;
+  margin-top: 1em;
   display: flex;
   justify-content: space-between;
   background: rgb(0, 0, 0);
@@ -258,13 +262,14 @@ footer .volume ion-icon:hover {
 }
 .container .firstSection .bodyFirstSection {
   display: flex;
+  align-items: center;
 }
 .container .firstSection .bodyFirstSection img {
   cursor: pointer;
   margin: 20px;
 }
 .container .firstSection .bodyFirstSection p {
-  margin: 15px 0;
+  margin: 20px 0;
   font-size: 10px;
   font-weight: 500;
 }
@@ -293,7 +298,7 @@ footer .volume ion-icon:hover {
 }
 .container .firstSection .bodyFirstSection .buttonsSection .salva {
   font-size: 13px;
-  margin: 10px 8px;
+  margin: 10px 15px;
   background-color: transparent;
   color: white;
   border-radius: 6em;
@@ -308,7 +313,7 @@ footer .volume ion-icon:hover {
 .container .firstSection .bodyFirstSection .buttonsSection .play {
   font-size: 13px;
   font-weight: bolder;
-  margin: 10px 8px;
+  margin: 10px 0;
   background-color: rgba(16, 208, 16, 0.837);
   color: black;
   border-radius: 6em;
@@ -374,11 +379,13 @@ footer .volume ion-icon:hover {
   margin-left: 10px;
   text-overflow: ellipsis;
 }
-.container .thirdSection {
+.container .thirdSection,
+.container .fourthSection {
   margin: 0 10px;
   display: flex;
 }
-.container .thirdSection .cards {
+.container .thirdSection .cards,
+.container .fourthSection .cards {
   cursor: pointer;
   margin: 5px;
   height: 230px;
@@ -389,27 +396,36 @@ footer .volume ion-icon:hover {
   align-content: space-around;
   border-radius: 1em;
 }
-.container .thirdSection .cards:hover {
+.container .thirdSection .cards:hover,
+.container .fourthSection .cards:hover {
   transform: scale(1.03);
   color: white;
   background-color: rgba(77, 71, 71, 0.882);
 }
-.container .thirdSection .cards img {
+.container .thirdSection .cards img,
+.container .fourthSection .cards img {
   border-top-left-radius: 1em;
   border-top-right-radius: 1em;
 }
-.container .thirdSection .cards div {
+.container .thirdSection .cards div,
+.container .fourthSection .cards div {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   height: 70px;
 }
-.container .thirdSection .cards div h5 {
+.container .thirdSection .cards div h5,
+.container .fourthSection .cards div h5 {
   margin: 10px 5px;
 }
-.container .thirdSection .cards div p {
+.container .thirdSection .cards div p,
+.container .fourthSection .cards div p {
   font-size: 12px;
   margin: 0 5px;
+}
+
+.fourthSection .cards {
+  margin-bottom: 3em !important;
 }
 
 .album-cont {

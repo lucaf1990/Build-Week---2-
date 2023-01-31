@@ -47,6 +47,39 @@ const thirdSection = async () => {
   });
 };
 
-const fourthSection = async () => {};
+const fourthSection = async () => {
+  try {
+    let arrayArtisti = [
+      "Madonna",
+      "lost frequencies",
+      "Dua Lipa",
+      "eminem",
+      "oasis",
+    ];
+
+    for (let i = 0; i < arrayArtisti.length; i++) {
+      const artisti = arrayArtisti[i];
+      console.log(artisti);
+      let [albums] = await fetchByQuery(artisti);
+      let { album, artist } = albums;
+      console.log(albums);
+      let row = document.querySelector(".fourthSection");
+      row.innerHTML += `<div class="cards">
+     <img
+       src="${album.cover_medium}"
+       alt="${album.title}"
+       height="150px"
+     />
+     <div>
+     <h5>${album.title}</h5>
+     <p>${artist.name}</p>
+     </div>
+   </div>`;
+    }
+  } catch (error) {
+    console.log(error);
+  }
+};
 secondSection();
 thirdSection();
+fourthSection();
