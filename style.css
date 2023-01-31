@@ -236,9 +236,10 @@ footer .volume ion-icon:hover {
 
 .icons {
   display: flex;
-  width: 40%;
+  width: 30%;
   justify-content: space-around;
   align-items: center;
+  fill: green;
   margin-top: 30px;
 }
 .icons .bigger {
@@ -260,4 +261,18 @@ footer .volume ion-icon:hover {
 }
 .icons .dot:hover {
   color: white;
+}
+
+#tabella {
+  width: 95% !important;
+  font-size: 0.8em;
+}
+#tabella td,
+#tabella tr {
+  color: rgb(133, 125, 125);
+  border: none;
+}
+#tabella td ion-icon,
+#tabella tr ion-icon {
+  font-size: 1.5em;
 }/*# sourceMappingURL=style.css.map */

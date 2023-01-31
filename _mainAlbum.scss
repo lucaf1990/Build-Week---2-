@@ -16,10 +16,10 @@
 }
 .icons {
   display: flex;
-  width: 40%;
+  width: 30%;
   justify-content: space-around;
   align-items: center;
-
+  fill: green;
   margin-top: 30px;
   .bigger {
     font-size: 4em;
@@ -43,6 +43,18 @@
   .dot {
     &:hover {
       color: white;
+    }
+  }
+}
+#tabella {
+  width: 95% !important;
+  font-size: 0.8em;
+  td,
+  tr {
+    color: rgb(133, 125, 125);
+    border: none;
+    ion-icon {
+      font-size: 1.5em;
     }
   }
 }
