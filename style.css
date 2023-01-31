@@ -224,6 +224,11 @@ footer .volume ion-icon:hover {
   color: white;
 }
 
+.play-icon {
+  display: flex;
+  justify-content: space-between;
+}
+
 .center {
   background-color: rgb(10, 8, 8);
 }
@@ -368,20 +373,33 @@ footer .volume ion-icon:hover {
   transform: scale(1.03);
   background-color: rgba(77, 71, 71, 0.882);
 }
+.container .secondSection .card:hover .play-icon {
+  opacity: 1;
+  transform: scale(1.7);
+  color: rgb(10, 136, 10);
+}
 .container .secondSection .card img {
   border-top-left-radius: 0.3em;
   border-bottom-left-radius: 0.3em;
 }
 .container .secondSection .card div {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
 }
-.container .secondSection .card h5 {
+.container .secondSection .card p {
   font-size: 15px;
   margin: 5px;
   margin-left: 10px;
   text-overflow: ellipsis;
+}
+.container .play-icon {
+  margin-right: 10px;
+  opacity: 0;
+}
+.container .play-icon:hover {
+  opacity: 1;
+  transform: scale(1.5);
+  color: green;
 }
 .container .thirdSection,
 .container .fourthSection {

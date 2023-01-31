@@ -144,8 +144,10 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
     .card {
       cursor: pointer;
+
       margin: 10px;
       width: 30%;
       display: flex;
@@ -157,6 +159,12 @@
       &:hover {
         transform: scale(1.03);
         background-color: rgba(77, 71, 71, 0.882);
+        .play-icon {
+          opacity: 1;
+          transform: scale(1.7);
+
+          color: rgb(10, 136, 10);
+        }
       }
       img {
         border-top-left-radius: 0.3em;
@@ -165,10 +173,9 @@
 
       div {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
       }
-      h5 {
+      p {
         font-size: 15px;
         margin: 5px;
         margin-left: 10px;
@@ -177,6 +184,15 @@
     }
   }
 
+  .play-icon {
+    margin-right: 10px;
+    opacity: 0;
+    &:hover {
+      opacity: 1;
+      transform: scale(1.5);
+      color: green;
+    }
+  }
   // terza sezione
   .thirdSection,
   .fourthSection {
