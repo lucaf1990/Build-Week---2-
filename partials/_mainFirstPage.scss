@@ -24,10 +24,9 @@
   // fine stile container
 
   .titles {
-    margin: 15px 10px 0;
+    margin: 40px 0 30px 20px;
     color: white;
     font-size: 20px;
-    margin-bottom: 0;
   }
 
   // prima sezione
@@ -41,60 +40,70 @@
       rgba(0, 0, 0, 1) 0%,
       rgba(74, 73, 73, 1) 100%
     );
-    &:hover {
-      transform: scale(1.02);
-    }
+
     .bodyFirstSection {
       display: flex;
       img {
         cursor: pointer;
-        margin: 10px;
+        margin: 20px;
       }
       p {
         margin: 15px 0;
-        font-weight: 700;
+        font-size: 10px;
+        font-weight: 500;
       }
       h1 {
         cursor: pointer;
         margin: 15px 0;
         font-weight: 900;
-        &:hover {
-          color: white;
-        }
       }
       h4 {
         cursor: pointer;
         margin: 10px 0 15px;
-
-        &:hover {
-          color: white;
-        }
       }
 
       h6 {
         cursor: pointer;
         margin: 20px 0 10px;
+      }
+      h1,
+      h4,
+      h6 {
         &:hover {
           color: white;
+          text-decoration: underline;
         }
       }
       .buttonsSection {
         display: flex;
         align-items: center;
-        button {
-          margin: 0 8px;
+        .salva {
+          font-size: 13px;
+          margin: 10px 8px;
           background-color: transparent;
           color: white;
           border-radius: 6em;
           border: 0.4px solid gray;
-          padding: 5px 15px;
+          padding: 5px 20px;
           cursor: pointer;
           &:hover {
-            background-color: rgb(17, 196, 17);
-            color: black;
+            border: 0.4px solid gray;
             transform: scale(1.3);
           }
         }
+        .play {
+          font-size: 13px;
+          font-weight: bolder;
+          margin: 10px 8px;
+          background-color: rgba(16, 208, 16, 0.837);
+          color: black;
+          border-radius: 6em;
+          padding: 5px 20px;
+          &:hover {
+            transform: scale(1.3);
+          }
+        }
+
         ion-icon {
           margin: 0 10px;
           cursor: pointer;
@@ -124,6 +133,7 @@
   .secondSection {
     margin: 0 10px;
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     .card {
       cursor: pointer;
@@ -131,13 +141,24 @@
       width: 30%;
       display: flex;
       align-items: center;
+      justify-content: flex-start;
       font-size: 10px;
       background-color: rgba(52, 47, 47, 0.83);
       &:hover {
-        transform: scale(1.1);
+        transform: scale(1.03);
+        background-color: rgba(77, 71, 71, 0.882);
       }
-      p {
+
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      h5 {
+        font-size: 15px;
+        margin: 5px;
         margin-left: 10px;
+        text-overflow: ellipsis;
       }
     }
   }
@@ -148,27 +169,37 @@
     display: flex;
     .cards {
       cursor: pointer;
-      margin: 10px;
+      margin: 5px;
       margin-bottom: 5em;
-      height: 200px;
+      height: 230px;
       width: 20%;
       background-color: #2f2b2b;
       display: flex;
       flex-direction: column;
+      align-content: space-around;
       border-radius: 1em;
       &:hover {
-        transform: scale(1.1);
+        transform: scale(1.03);
         color: white;
+        background-color: rgba(77, 71, 71, 0.882);
       }
       img {
         border-top-left-radius: 1em;
         border-top-right-radius: 1em;
       }
-      h5 {
-        margin: 10px 5px;
-      }
-      p {
-        margin: 0 5px;
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 70px;
+
+        h5 {
+          margin: 10px 5px;
+        }
+        p {
+          font-size: 12px;
+          margin: 0 5px;
+        }
       }
     }
   }
