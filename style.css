@@ -396,11 +396,6 @@ footer .volume ion-icon:hover {
   margin-right: 10px;
   opacity: 0;
 }
-.container .play-icon:hover {
-  opacity: 1;
-  transform: scale(1.5);
-  color: green;
-}
 .container .thirdSection,
 .container .fourthSection {
   margin: 0 10px;
