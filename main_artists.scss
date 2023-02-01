@@ -1,3 +1,28 @@
+center {
+  overflow: auto;
+  height: 100%;
+
+  &::-webkit-scrollbar {
+    width: 10px;
+    background-color: #121212;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: grey;
+    border-radius: 10px;
+  }
+
+  &::-moz-scrollbar {
+    width: 10px;
+    background-color: #121212;
+  }
+
+  &::-moz-scrollbar-thumb {
+    background-color: grey;
+    border-radius: 10px;
+  }
+}
+
 .containerArtist {
   .artist {
     height: 30%;

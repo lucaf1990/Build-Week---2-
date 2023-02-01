@@ -1,7 +1,7 @@
 .center {
   background: linear-gradient((rgb(0, 0, 0), rgb(14, 13, 13), black));
   color: white;
-  overflow: scroll;
+  overflow: auto;
   height: 100%;
 
   &::-webkit-scrollbar {
