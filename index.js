@@ -13,7 +13,7 @@ const secondSection = async () => {
   let mySongs = [songs[4], songs[2], songs[10], songs[8], songs[15], songs[20]];
   console.log(mySongs);
   mySongs.forEach(({ album, title, link }) => {
-    row.innerHTML += `<div class="card" style="width: 252px">
+    row.innerHTML += `<div class="card" style="width: 240px">
     <div>
     <img
       src="${album.cover_small}"
