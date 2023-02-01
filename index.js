@@ -54,7 +54,7 @@ const secondSection = async () => {
     <p>${title}</p>
     </div>
     <div class="play-icon">
-    <ion-icon name="play-circle-outline" class="main-play-icon"></ion-icon>
+    <i class="bi bi-play-circle-fill"></i>
     </div>
   </div>`;
   });

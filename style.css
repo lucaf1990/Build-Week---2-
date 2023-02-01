@@ -40,12 +40,12 @@ footer .song {
   display: flex;
   align-items: center;
 }
-footer .song ion-icon {
+footer .song i {
   cursor: pointer;
   margin: 0 5px;
   opacity: 0.5;
 }
-footer .song ion-icon:hover {
+footer .song i:hover {
   opacity: 1;
 }
 footer .song .song-desc {
@@ -60,13 +60,27 @@ footer .song .song-desc h5 {
   font-weight: 300;
   margin: 0;
 }
-footer .player ion-icon {
+footer .player {
+  display: flex;
+  align-items: center;
+}
+footer .player i {
+  font-size: x-large;
   cursor: pointer;
   margin: 0 5px;
   opacity: 0.5;
 }
-footer .player ion-icon:hover {
+footer .player i:hover {
   opacity: 1;
+}
+footer .player .avvia_song {
+  font-size: 2.5em;
+  color: white;
+}
+footer .player .avvia_song:hover {
+  color: green;
+  cursor: pointer;
+  transform: scale(1.1);
 }
 footer .like {
   margin-left: 5em;
@@ -75,12 +89,13 @@ footer .volume {
   display: flex;
   margin-right: 2em;
 }
-footer .volume ion-icon {
+footer .volume i {
+  font-size: x-large;
   cursor: pointer;
   margin: 0 8px;
   opacity: 0.5;
 }
-footer .volume ion-icon:hover {
+footer .volume i:hover {
   opacity: 1;
 }
 
@@ -377,8 +392,9 @@ footer .volume ion-icon:hover {
 }
 .container .secondSection .card:hover .play-icon {
   opacity: 1;
-  transform: scale(1.7);
+  font-size: 4em;
   color: rgb(10, 136, 10);
+  margin-right: 10px;
 }
 .container .secondSection .card img {
   border-top-left-radius: 0.3em;

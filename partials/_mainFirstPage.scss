@@ -161,8 +161,10 @@
         background-color: rgba(77, 71, 71, 0.882);
         .play-icon {
           opacity: 1;
-          transform: scale(1.7);
+          font-size: 4em;
+          // transform: scale(1.7);
           color: rgb(10, 136, 10);
+          margin-right: 10px;
         }
       }
       img {
