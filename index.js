@@ -6,6 +6,35 @@ const fetchByQuery = async (query) => {
   return songs;
 };
 
+const firstSection = async () => {
+  let row = document.querySelector(".bodyFirstSection");
+  let song = await fetchByQuery("flowers");
+  console.log(song);
+  let mainAlbum = [song[0]];
+  mainAlbum.forEach(({ album, title, artist, preview }) => {
+    row.innerHTML += `
+
+  <img
+    height="180px"
+    src="${album.cover_xl} "
+    alt=""
+  />
+  <div>
+    <p>ALBUM</p>
+    <h1>${title}</h1>
+    <h4>${artist.name} </h4>
+    <h6>Ascolta il nuovo singolo</h6>
+    <div class="buttonsSection">
+      <button class="play">Play</button>
+      <button class="salva">Salva</button>
+      <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+    </div>
+  </div>`;
+  });
+};
+
+firstSection();
+
 const secondSection = async () => {
   let songs = await fetchByQuery("dance");
   console.log(songs);
@@ -70,16 +99,16 @@ const fourthSection = async () => {
       console.log(albums);
       let row = document.querySelector(".fourthSection");
       row.innerHTML += `<div class="cards">
-     <img
-       src="${album.cover_medium}"
-       alt="${album.title}"
-       height="130px"
-     />
-     <div>
-     <h5>${album.title}</h5>
-     <p>${artist.name}</p>
-     </div>
-   </div>`;
+      <img
+        src="${album.cover_medium}"
+        alt="${album.title}"
+        height="130px"
+      />
+      <div>
+      <h5>${album.title}</h5>
+      <p>${artist.name}</p>
+      </div>
+    </div>`;
     }
   } catch (error) {
     console.log(error);
