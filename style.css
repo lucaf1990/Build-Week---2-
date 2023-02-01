@@ -235,6 +235,7 @@ footer .volume i:hover {
   border: none;
   font-size: 0.6em;
   margin-bottom: 40px;
+  margin-top: 40px;
 }
 #absolute #tendina:hover {
   cursor: pointer;
@@ -423,7 +424,7 @@ footer .volume i:hover {
 .container .fourthSection .cards {
   cursor: pointer;
   margin: 5px;
-  height: 230px;
+  height: 250px;
   width: 20%;
   background-color: #2f2b2b;
   display: flex;

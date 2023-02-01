@@ -21,9 +21,9 @@ const firstSection = async () => {
   />
   <div>
     <p>ALBUM</p>
-    <a href="./album.html">
+    <a href="./album.html?idAlbum=${album.id}">
     <h1>${title}</h1></a>
-    <a href="./artists.html">
+    <a href="./artists.html?idArtist=${artist.id}">
     <h4>${artist.name}</h4></a>
     <h6>Ascolta il nuovo singolo</h6>
     <div class="buttonsSection">
@@ -34,8 +34,6 @@ const firstSection = async () => {
   </div>`;
   });
 };
-
-firstSection();
 
 const secondSection = async () => {
   let songs = await fetchByQuery("dance");
@@ -53,7 +51,7 @@ const secondSection = async () => {
     />
     </div>
     <div class="title" style="width:100%; justify-content:left">
-    <a href="./album.html">
+    <a href="./album.html?idAlbum=${album.id}">
     <p>${title}</p></a>
     </div>
     <div class="play-icon">
@@ -77,10 +75,9 @@ const thirdSection = async () => {
       height="130px"
     />
     <div>
-    <a href="./album.html">
-    <h5>${title}</h5>
-</a>
-    <a href="./artists.html">
+    <a href="./album.html?idAlbum=${album.id}">
+    <h5>${album.title}</h5></a>
+    <a href="./artists.html?idArtist=${artist.id}">
     <p>${artist.name}</p></a>
     </div>
   </div>`;
@@ -111,9 +108,9 @@ const fourthSection = async () => {
         height="130px"
       />
       <div>
-      <a href="./album.html">
+      <a href="./album.html?idAlbum=${album.id}">
       <h5>${album.title}</h5></a>
-      <a href="./artists.html">
+      <a href="./artists.html?idArtist=${artist.id}">
       <p>${artist.name}</p></a>
       </div>
     </div>`;
@@ -122,6 +119,8 @@ const fourthSection = async () => {
     console.log(error);
   }
 };
+
+firstSection();
 secondSection();
 thirdSection();
 fourthSection();
