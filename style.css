@@ -571,4 +571,9 @@ footer .volume i:hover {
   display: flex;
   justify-content: space-evenly;
   color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }/*# sourceMappingURL=style.css.map */

@@ -21,8 +21,10 @@ const firstSection = async () => {
   />
   <div>
     <p>ALBUM</p>
-    <h1>${title}</h1>
-    <h4>${artist.name} </h4>
+    <a href="./album.html">
+    <h1>${title}</h1></a>
+    <a href="./artists.html">
+    <h4>${artist.name}</h4></a>
     <h6>Ascolta il nuovo singolo</h6>
     <div class="buttonsSection">
       <button class="play">Play</button>
@@ -51,7 +53,8 @@ const secondSection = async () => {
     />
     </div>
     <div class="title" style="width:100%; justify-content:left">
-    <p>${title}</p>
+    <a href="./album.html">
+    <p>${title}</p></a>
     </div>
     <div class="play-icon">
     <i class="bi bi-play-circle-fill"></i>
@@ -74,8 +77,11 @@ const thirdSection = async () => {
       height="130px"
     />
     <div>
+    <a href="./album.html">
     <h5>${title}</h5>
-    <p>${artist.name}</p>
+</a>
+    <a href="./artists.html">
+    <p>${artist.name}</p></a>
     </div>
   </div>`;
   });
@@ -105,8 +111,10 @@ const fourthSection = async () => {
         height="130px"
       />
       <div>
-      <h5>${album.title}</h5>
-      <p>${artist.name}</p>
+      <a href="./album.html">
+      <h5>${album.title}</h5></a>
+      <a href="./artists.html">
+      <p>${artist.name}</p></a>
       </div>
     </div>`;
     }
