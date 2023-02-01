@@ -554,13 +554,11 @@ footer .volume i:hover {
   font-size: 1.5em;
 }
 
-.containerArtist {
-  height: 100%;
-}
 .containerArtist .artist {
   height: 30%;
   color: white;
   background-color: red;
+  display: flex;
 }
 
 .play_like {
