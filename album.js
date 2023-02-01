@@ -4,6 +4,7 @@ window.onload = async () => {
   if (!id) window.location.assign("/index.html");
   console.log(id);
 
+  // prima sezione
   const firstSection = async () => {
     let row = document.querySelector(".containerAlbum");
     let res = await fetch(
@@ -29,4 +30,25 @@ window.onload = async () => {
   </div>`;
   };
   firstSection();
+
+  // seconda sezione
+  const secondSection = async () => {
+    let row = document.querySelector(".containerTabella");
+    let res = await fetch(
+      "https://striveschool-api.herokuapp.com/api/deezer/album/" + id
+    );
+    console.log(res);
+    let data = await res.json();
+    const songs = data.tracks.data;
+    console.log(songs);
+    for (let i = 0; i < songs.length; i++) {
+      row.innerHTML += `<td class="ms-5 col col-1" scope="row">${i + 1}</td>
+      <td colspan="1" class="col col-5">${songs[i].title_short}</td>
+      <td class="col col-5">${songs[i].rank} </td>
+      <td class="col col-1" colspan="5">
+        ${(songs[i].duration / 60).toFixed(2)} min
+      </td>`;
+    }
+  };
+  secondSection();
 };

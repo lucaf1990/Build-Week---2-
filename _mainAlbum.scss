@@ -1,3 +1,36 @@
+.center {
+  color: white;
+  overflow: scroll;
+  height: 100%;
+
+  &::-webkit-scrollbar {
+    width: 10px;
+    background-color: #121212;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: grey;
+    border-radius: 10px;
+  }
+
+  &::-moz-scrollbar {
+    width: 10px;
+    background-color: #121212;
+  }
+
+  &::-moz-scrollbar-thumb {
+    background-color: grey;
+    border-radius: 10px;
+  }
+  // fine stile container
+
+  .titles {
+    margin: 40px 0 30px 20px;
+    color: white;
+    font-size: 20px;
+  }
+}
+
 .album-cont {
   margin-left: 20px;
   margin-top: 50px;
