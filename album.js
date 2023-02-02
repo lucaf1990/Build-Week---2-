@@ -21,11 +21,11 @@ window.onload = async () => {
     <h2>${album.title}</h2>
     <p class="paragrafoAlbum">
       <ion-icon name="person-circle-outline"></ion-icon>
-      ${album.artist.name} - ${new Date(
-      album.release_date
-    ).getFullYear()} - Brani: ${album.nb_tracks}, Durata: ${Math.floor(
-      album.duration / 60
-    )}min
+      <a href="./artists.html?idArtist=${album.artist.id}"> ${
+      album.artist.name
+    }</a> - ${new Date(album.release_date).getFullYear()} - Brani: ${
+      album.nb_tracks
+    }, Durata: ${Math.floor(album.duration / 60)}min
     </p>
   </div>`;
   };

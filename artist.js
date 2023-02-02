@@ -50,13 +50,17 @@ window.onload = async () => {
     ];
     console.log(mySongs);
     for (let i = 0; i < mySongs.length; i++) {
-      row.innerHTML += `<td class=" col col-1" scope="row">${i + 1}</td>
+      row.innerHTML += `<td class=" col col-1 text-white align-items-center" scope="row">${
+        i + 1
+      }</td>
       <td colspan="1" class="col col-1"><img src="${
         mySongs[i].album.cover_small
       }" alt="${mySongs[i].artist.name}"></td>
-      <td colspan="1" class="col col-6">${mySongs[i].title_short}</td>
-      <td class="col col-2">${mySongs[i].rank} </td>
-      <td class="col col-2" colspan="5">
+      <td colspan="1" class="col col-6 text-white ">${
+        mySongs[i].title_short
+      }</td>
+      <td class="col col-2 text-white">${mySongs[i].rank} </td>
+      <td class="col col-2 text-white" colspan="5">
         ${(mySongs[i].duration / 60).toFixed(2)} min
       </td>`;
       // fine tabella
@@ -66,10 +70,14 @@ window.onload = async () => {
       row2.innerHTML = `<h4>Brani che ti piacciono</h4>
       <div class="likes row">
         <div class="col col-3 mt-2">
-          <img src="${mySongs[i].artist.picture_small}" alt="${mySongs[i].artist.name}" class="rounded-circle"/>
+          <img src="${mySongs[i].artist.picture_small}" alt="${
+        mySongs[i].artist.name
+      }" class="rounded-circle"/>
         </div>
         <div class=" col col-9 mt-2">
-            <h6>Hai messo mi piace a 3 brani</h6>
+            <h6>Hai messo mi piace a ${Math.floor(
+              Math.random() * 20
+            )} brani</h6>
             <p>di ${mySongs[i].artist.name} </p>
         </div>
       </div>
@@ -101,7 +109,7 @@ window.onload = async () => {
     ];
     console.log(myAlbums);
     myAlbums.forEach(({ album, artist }) => {
-      row.innerHTML += `<div class="cards">
+      row.innerHTML += `<div class="cards ">
       <img
         src="${album.cover_medium}"
         alt="${album.title}"

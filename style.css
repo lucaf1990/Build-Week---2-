@@ -5,7 +5,7 @@ html {
 body {
   margin: 0;
   height: 100%;
-  font-family: "roboto", sans-serif;
+  font-family: "lato", sans-serif;
 }
 
 ion-icon {
@@ -466,7 +466,7 @@ footer .volume i:hover {
   margin-bottom: 3em !important;
 }
 
-a {
+body a {
   text-decoration: none;
   color: white;
 }
@@ -640,13 +640,16 @@ center::-moz-scrollbar-thumb {
 .containerArtist .artist .album-cont {
   position: relative;
   top: -230px;
+  color: white;
 }
 .containerArtist .artist .album-cont h2 {
   font-size: 70px;
   margin: 0 0 0.5em 0;
+  color: white;
 }
 .containerArtist .artist .album-cont p {
   margin: 0;
+  color: white;
 }
 .containerArtist .artist .album-cont p .bi {
   border-radius: 6em;
@@ -690,8 +693,16 @@ center::-moz-scrollbar-thumb {
 
 .canzoni_artista {
   display: flex;
-  width: 100%;
+  width: 99%;
   color: white;
+}
+
+tbody {
+  font-size: medium;
+  vertical-align: middle !important;
+}
+tbody img {
+  height: 40px;
 }
 
 a {
