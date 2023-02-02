@@ -19,7 +19,8 @@ window.onload = async () => {
   <div class="artist">
   <div class="album-cont">
   <p><i class="bi bi-patch-check-fill"></i> Artista Verificato</p>
-  <h2>${artist.name}</h2>
+  <a href="./artists.html?idArtist=${artist.id}">
+    <p>${artist.name}</p><h2>${artist.name}</h2></a>
   <p>Ascoltatori mensili: ${artist.nb_fan}</p>
 </div>
   </div>`;

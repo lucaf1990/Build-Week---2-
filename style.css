@@ -599,6 +599,11 @@ body a {
   margin: 0 5px;
 }
 
+body a {
+  text-decoration: none;
+  color: white;
+}
+
 center {
   overflow: auto;
   height: 100%;
@@ -703,6 +708,17 @@ tbody {
 }
 tbody img {
   height: 40px;
+}
+
+.search {
+  position: relative;
+  left: -250px;
+}
+.search #searchBar {
+  width: 350px;
+  border-radius: 3em;
+  border: none;
+  padding: 8px 20px;
 }
 
 a {
