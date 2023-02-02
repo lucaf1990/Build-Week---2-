@@ -72,7 +72,6 @@ const thirdSection = async () => {
     <img
       src="${album.cover_medium}"
       alt="${album.title}"
-      height="130px"
     />
     <div>
     <a href="./album.html?idAlbum=${album.id}">
@@ -105,7 +104,6 @@ const fourthSection = async () => {
       <img
         src="${album.cover_medium}"
         alt="${album.title}"
-        height="130px"
       />
       <div>
       <a href="./album.html?idAlbum=${album.id}">
