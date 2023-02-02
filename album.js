@@ -66,12 +66,12 @@ window.onload = async () => {
     let data2 = await res2.json();
     console.log(data2);
     let myAlbums = [
-      data2[4],
-      data2[2],
-      data2[10],
-      data2[8],
-      data2[15],
-      data2[20],
+      data2.data[4],
+      data2.data[2],
+      data2.data[10],
+      data2.data[8],
+      data2.data[15],
+      data2.data[20],
     ];
     console.log(myAlbums);
     myAlbums.forEach(({ album, title, link }) => {
