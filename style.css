@@ -426,7 +426,7 @@ footer .volume i:hover {
 .container .fourthSection .cards {
   cursor: pointer;
   margin: 5px;
-  height: 250px;
+  padding: 10px;
   width: 20%;
   background-color: #2f2b2b;
   display: flex;
@@ -443,7 +443,6 @@ footer .volume i:hover {
 .container .thirdSection .cards img,
 .container .fourthSection .cards img {
   border-radius: 5px;
-  margin: 10px;
 }
 .container .thirdSection .cards div,
 .container .fourthSection .cards div {
@@ -554,6 +553,43 @@ footer .volume i:hover {
   font-size: 1.5em;
 }
 
+.thirdSection {
+  margin: 0 10px;
+  display: flex;
+}
+.thirdSection .cards {
+  cursor: pointer;
+  margin: 5px;
+  padding: 10px;
+  width: 20%;
+  background-color: #2f2b2b;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  border-radius: 3px;
+}
+.thirdSection .cards:hover {
+  transform: scale(1.03);
+  color: white;
+  background-color: rgba(77, 71, 71, 0.882);
+}
+.thirdSection .cards img {
+  border-radius: 5px;
+}
+.thirdSection .cards div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 70px;
+}
+.thirdSection .cards div h5 {
+  margin: 10px 5px;
+}
+.thirdSection .cards div p {
+  font-size: 12px;
+  margin: 0 5px;
+}
+
 center {
   overflow: auto;
   height: 100%;
@@ -588,9 +624,24 @@ center::-moz-scrollbar-thumb {
      object-position: center;
 }
 .containerArtist .artist {
-  color: white;
+  color: rgba(255, 255, 255, 0.874);
   display: flex;
   position: absolute;
+}
+.containerArtist .artist .album-cont {
+  position: relative;
+  top: -230px;
+}
+.containerArtist .artist .album-cont h2 {
+  font-size: 70px;
+  margin: 0 0 0.5em 0;
+}
+.containerArtist .artist .album-cont p {
+  margin: 0;
+}
+.containerArtist .artist .album-cont p .bi {
+  background-color: blue;
+  border-radius: 6em;
 }
 
 .play_like {

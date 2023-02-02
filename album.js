@@ -66,31 +66,27 @@ window.onload = async () => {
     let data2 = await res2.json();
     console.log(data2);
     let myAlbums = [
-      data2[4],
-      data2[2],
-      data2[10],
-      data2[8],
-      data2[15],
-      data2[20],
+      data2.data[4],
+      data2.data[2],
+      data2.data[10],
+      data2.data[8],
+      data2.data[15],
     ];
     console.log(myAlbums);
-    myAlbums.forEach(({ album, title, link }) => {
-      row.innerHTML += `<div class="card" >
-    <div>
-    <img
-      src="${data2.cover_small}"
-      alt="${data2.title}"
-      height="80px"
-    />
-    </div>
-    <div class="title" style="width:100%; justify-content:left">
-    <a href="./album.html?idAlbum=${data2.id}">
-    <p>${title}</p></a>
-    </div>
-    <div class="play-icon">
-    <i class="bi bi-play-circle-fill"></i>
-    </div>
-  </div>`;
+    myAlbums.forEach(({ album, artist }) => {
+      row.innerHTML += `<div class="cards">
+      <img
+        src="${album.cover_medium}"
+        alt="${album.title}"
+        height="130px"
+      />
+      <div>
+      <a href="./album.html?idAlbum=${album.id}">
+      <h5>${album.title}</h5></a>
+      <a href="./artists.html?idArtist=${artist.id}">
+      <p>${artist.name}</p></a>
+      </div>
+    </div>`;
     });
   };
   thirdSection();
