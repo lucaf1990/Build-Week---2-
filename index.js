@@ -15,7 +15,7 @@ const firstSection = async () => {
     row.innerHTML += `
 
   <img
-  height='250px'
+    height="180px"
     src="${album.cover_xl} "
     alt=""
   />
