@@ -6,6 +6,15 @@
     width: 350px;
     border-radius: 3em;
     border: none;
-    padding: 8px 20px;
+    padding: 8px 40px;
+    &:focus {
+      outline: none;
+    }
   }
+}
+
+#lente {
+  position: relative;
+  color: black;
+  left: -340px;
 }
