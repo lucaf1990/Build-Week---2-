@@ -18,7 +18,7 @@ window.onload = async () => {
   />
   <div class="artist">
   <div class="album-cont">
-  <p><i class="bi bi-patch-check"></i> Artista Verificato</p>
+  <p><i class="bi bi-patch-check-fill"></i> Artista Verificato</p>
   <h2>${artist.name}</h2>
   <p>Ascoltatori mensili: ${artist.nb_fan}</p>
 </div>
@@ -35,14 +35,86 @@ window.onload = async () => {
     console.log(res);
     let data = await res.json();
     console.log(data);
-    // for (let i = 0; i < songs.length; i++) {
-    //   row.innerHTML += `<td class="ms-5 col col-1" scope="row">${i + 1}</td>
-    //   <td colspan="1" class="col col-5">${songs[i].title_short}</td>
-    //   <td class="col col-5">${songs[i].rank} </td>
-    //   <td class="col col-1" colspan="5">
-    //     ${(songs[i].duration / 60).toFixed(2)} min
-    //   </td>`;
-    // }
+
+    let res2 = await fetch(
+      `https://striveschool-api.herokuapp.com/api/deezer/search?q=${data.name}`
+    );
+    let data2 = await res2.json();
+    console.log(data2);
+    let mySongs = [
+      data2.data[0],
+      data2.data[2],
+      data2.data[1],
+      data2.data[3],
+      data2.data[4],
+    ];
+    console.log(mySongs);
+    for (let i = 0; i < mySongs.length; i++) {
+      row.innerHTML += `<td class=" col col-1" scope="row">${i + 1}</td>
+      <td colspan="1" class="col col-1"><img src="${
+        mySongs[i].album.cover_small
+      }" alt="${mySongs[i].artist.name}"></td>
+      <td colspan="1" class="col col-6">${mySongs[i].title_short}</td>
+      <td class="col col-2">${mySongs[i].rank} </td>
+      <td class="col col-2" colspan="5">
+        ${(mySongs[i].duration / 60).toFixed(2)} min
+      </td>`;
+      // fine tabella
+
+      // inizio like
+      let row2 = document.querySelector(".braniCheTiPiacciono");
+      row2.innerHTML = `<h4>Brani che ti piacciono</h4>
+      <div class="likes row">
+        <div class="col col-3 mt-2">
+          <img src="${mySongs[i].artist.picture_small}" alt="${mySongs[i].artist.name}" class="rounded-circle"/>
+        </div>
+        <div class=" col col-9 mt-2">
+            <h6>Hai messo mi piace a 3 brani</h6>
+            <p>di ${mySongs[i].artist.name} </p>
+        </div>
+      </div>
+      `;
+    }
   };
   secondSection();
+
+  // sezione 3
+  //terza sezione
+  const thirdSection = async () => {
+    let row = document.querySelector(".thirdSection");
+    let res = await fetch(
+      "https://striveschool-api.herokuapp.com/api/deezer/artist/" + id
+    );
+    let data = await res.json();
+    console.log(data);
+    let res2 = await fetch(
+      `https://striveschool-api.herokuapp.com/api/deezer/search?q=${data.name}`
+    );
+    let data2 = await res2.json();
+    console.log(data2);
+    let myAlbums = [
+      data2.data[4],
+      data2.data[2],
+      data2.data[10],
+      data2.data[8],
+      data2.data[15],
+    ];
+    console.log(myAlbums);
+    myAlbums.forEach(({ album, artist }) => {
+      row.innerHTML += `<div class="cards">
+      <img
+        src="${album.cover_medium}"
+        alt="${album.title}"
+        height="130px"
+      />
+      <div>
+      <a href="./album.html?idAlbum=${album.id}">
+      <h5>${album.title}</h5></a>
+      <a href="./artists.html?idArtist=${artist.id}">
+      <p>${artist.name}</p></a>
+      </div>
+    </div>`;
+    });
+  };
+  thirdSection();
 };

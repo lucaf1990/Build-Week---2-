@@ -33,12 +33,13 @@ center {
     object-position: center;
   }
   .artist {
-    color: rgba(255, 255, 255, 0.874);
+    color: white;
     display: flex;
     position: absolute;
     .album-cont {
       position: relative;
       top: -230px;
+
       h2 {
         font-size: 70px;
         margin: 0 0 0.5em 0;
@@ -46,8 +47,9 @@ center {
       p {
         margin: 0;
         .bi {
-          background-color: blue;
           border-radius: 6em;
+          color: #2c96ff;
+          background-color: transparent;
         }
       }
     }
@@ -92,6 +94,6 @@ center {
 
 .canzoni_artista {
   display: flex;
-  justify-content: space-evenly;
+  width: 99%;
   color: white;
 }

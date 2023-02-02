@@ -32,7 +32,7 @@ center::-moz-scrollbar-thumb {
      object-position: center;
 }
 .containerArtist .artist {
-  color: rgba(255, 255, 255, 0.874);
+  color: white;
   display: flex;
   position: absolute;
 }
@@ -48,8 +48,9 @@ center::-moz-scrollbar-thumb {
   margin: 0;
 }
 .containerArtist .artist .album-cont p .bi {
-  background-color: blue;
   border-radius: 6em;
+  color: #2c96ff;
+  background-color: transparent;
 }
 
 .play_like {
@@ -88,6 +89,6 @@ center::-moz-scrollbar-thumb {
 
 .canzoni_artista {
   display: flex;
-  justify-content: space-evenly;
+  width: 99%;
   color: white;
 }/*# sourceMappingURL=main_artists.css.map */
