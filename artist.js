@@ -18,7 +18,7 @@ window.onload = async () => {
   />
   <div class="artist">
   <div class="album-cont">
-  <p>ALBUM</p>
+  <p><i class="bi bi-patch-check"></i> Artista Verificato</p>
   <h2>${artist.name}</h2>
   <p>Ascoltatori mensili: ${artist.nb_fan}</p>
 </div>

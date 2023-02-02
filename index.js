@@ -65,9 +65,9 @@ const thirdSection = async () => {
   let songs = await fetchByQuery("Caparezza");
   console.log(songs);
   let row = document.querySelector(".thirdSection");
-  let mySongs = [songs[1], songs[12], songs[6], songs[8], songs[20]];
+  let mySongs = [songs[1], songs[12], songs[6], songs[8], songs[0]];
   console.log(mySongs);
-  mySongs.forEach(({ album, title, artist, link }) => {
+  mySongs.forEach(({ album, artist }) => {
     row.innerHTML += `<div class="cards">
     <img
       src="${album.cover_medium}"

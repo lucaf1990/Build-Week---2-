@@ -1,7 +1,5 @@
 window.onload = async () => {
   let url = new URLSearchParams(window.location.search);
-  let artista = url.get("idArtist");
-  console.log(artista);
   let id = url.get("idAlbum");
   if (!id) window.location.assign("/index.html");
   console.log(id);
@@ -58,53 +56,42 @@ window.onload = async () => {
   const thirdSection = async () => {
     let row = document.querySelector(".thirdSection");
     let res = await fetch(
-      "https://striveschool-api.herokuapp.com/api/deezer/search?q=" + artista
+      "https://striveschool-api.herokuapp.com/api/deezer/album/" + id
     );
-    console.log(res);
     let data = await res.json();
     console.log(data);
-    const canzoni = data.data;
-    console.log(canzoni);
-    for (let i = 0; i < canzoni.length; i++) {
-      const albums = canzoni[i].album;
-      // console.log(albums);
-      // if (i <= 5) {
-      //   console.log(albums);
-      //   row.innerHTML += `<div class="cards">
-      // <img
-      // src="${canzoni[i].album.cover_medium}"
-      // alt="${canzoni[i].album.title}"
-      // height="130px"
-      // />
-      // <div>
-      // <a href="./album.html?idAlbum=${canzoni[i].id}">
-      // <h5>${canzoni[i].title}</h5></a>
-      // <a href="./artists.html?idArtist=${canzoni[i].artist.id}">
-      // <p>${canzoni[i].artist.name}</p></a>
-      // </div>
-      // </div>`;
-      // }
-    }
-
-    // const albums = data.album;
-    // console.log(albums);
-    // let otherSongs = [albums[0], albums[1], albums[3], albums[4], albums[5]];
-    // console.log(otherSongs);
-    // otherSongs.forEach((elements) => {
-    // row.innerHTML += `<div class="cards">
-    // <img
-    // src="${elements.album.cover_medium}"
-    // alt="${elements.album.title}"
-    // height="130px"
-    // />
-    // <div>
-    // <a href="./album.html?idAlbum=${elements.id}">
-    // <h5>${elements.title}</h5></a>
-    // <a href="./artists.html?idArtist=${elements.artist.id}">
-    // <p>${elements.artist.name}</p></a>
-    // </div>
-    // </div>`;
-    // });
+    let res2 = await fetch(
+      `https://striveschool-api.herokuapp.com/api/deezer/search?q=${data.artist.name}`
+    );
+    let data2 = await res2.json();
+    console.log(data2);
+    let myAlbums = [
+      data2[4],
+      data2[2],
+      data2[10],
+      data2[8],
+      data2[15],
+      data2[20],
+    ];
+    console.log(myAlbums);
+    myAlbums.forEach(({ album, title, link }) => {
+      row.innerHTML += `<div class="card" >
+    <div>
+    <img
+      src="${data2.cover_small}"
+      alt="${data2.title}"
+      height="80px"
+    />
+    </div>
+    <div class="title" style="width:100%; justify-content:left">
+    <a href="./album.html?idAlbum=${data2.id}">
+    <p>${title}</p></a>
+    </div>
+    <div class="play-icon">
+    <i class="bi bi-play-circle-fill"></i>
+    </div>
+  </div>`;
+    });
   };
   thirdSection();
 };

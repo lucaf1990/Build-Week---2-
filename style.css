@@ -575,11 +575,22 @@ center::-moz-scrollbar-thumb {
   border-radius: 10px;
 }
 
+.containerArtist {
+  position: relative;
+  height: 40%;
+}
+.containerArtist img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
 .containerArtist .artist {
-  height: 30%;
   color: white;
-  background-color: red;
   display: flex;
+  position: absolute;
 }
 
 .play_like {

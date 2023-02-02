@@ -33,9 +33,24 @@ center {
     object-position: center;
   }
   .artist {
-    color: white;
+    color: rgba(255, 255, 255, 0.874);
     display: flex;
     position: absolute;
+    .album-cont {
+      position: relative;
+      top: -230px;
+      h2 {
+        font-size: 70px;
+        margin: 0 0 0.5em 0;
+      }
+      p {
+        margin: 0;
+        .bi {
+          background-color: blue;
+          border-radius: 6em;
+        }
+      }
+    }
   }
 }
 

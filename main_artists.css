@@ -32,9 +32,24 @@ center::-moz-scrollbar-thumb {
      object-position: center;
 }
 .containerArtist .artist {
-  color: white;
+  color: rgba(255, 255, 255, 0.874);
   display: flex;
   position: absolute;
+}
+.containerArtist .artist .album-cont {
+  position: relative;
+  top: -230px;
+}
+.containerArtist .artist .album-cont h2 {
+  font-size: 70px;
+  margin: 0 0 0.5em 0;
+}
+.containerArtist .artist .album-cont p {
+  margin: 0;
+}
+.containerArtist .artist .album-cont p .bi {
+  background-color: blue;
+  border-radius: 6em;
 }
 
 .play_like {
