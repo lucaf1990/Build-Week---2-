@@ -109,12 +109,11 @@ const fourthSection = async () => {
       />
       <div>
       <a href="./album.html?idAlbum=${album.id}">
-      <a href="./album.html?idArtist=${artist.id}">
-      <h5>${album.title}</h5></a></a>
-      <a href="./album.html?idArtist=${artist.id}">
-      <p>${artist.name}</p></a>
-      </div>
-    </div>`;
+    <h5>${album.title}</h5></a>
+    <a href="./artists.html?idArtist=${artist.id}">
+    <p>${artist.name}</p></a>
+    </div>
+  </div>`;
     }
   } catch (error) {
     console.log(error);

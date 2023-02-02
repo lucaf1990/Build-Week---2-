@@ -554,6 +554,27 @@ footer .volume i:hover {
   font-size: 1.5em;
 }
 
+center {
+  overflow: auto;
+  height: 100%;
+}
+center::-webkit-scrollbar {
+  width: 10px;
+  background-color: #121212;
+}
+center::-webkit-scrollbar-thumb {
+  background-color: grey;
+  border-radius: 10px;
+}
+center::-moz-scrollbar {
+  width: 10px;
+  background-color: #121212;
+}
+center::-moz-scrollbar-thumb {
+  background-color: grey;
+  border-radius: 10px;
+}
+
 .containerArtist .artist {
   height: 30%;
   color: white;

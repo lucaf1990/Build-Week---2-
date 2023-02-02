@@ -6,21 +6,23 @@ window.onload = async () => {
 
   //prima sezione
   const firstSection = async () => {
-    let row = document.querySelector(".artist");
+    let container = document.querySelector(".containerArtist");
     let res = await fetch(
       "https://striveschool-api.herokuapp.com/api/deezer/artist/" + id
     );
     let artist = await res.json();
     console.log(artist);
-    row.innerHTML += ` <img
-      src="${artist.picture_medium}"
-      alt=""
-    />
-    <div class="album-cont">
-      <p>ALBUM</p>
-      <h2>${artist.name}</h2>
-      <p>Ascoltatori mensili: ${artist.nb_fan}</p>
-    </div>`;
+    container.innerHTML = `<img class="coverBig"
+    src="${artist.picture_xl}"
+    alt="${artist.name}"
+  />
+  <div class="artist">
+  <div class="album-cont">
+  <p>ALBUM</p>
+  <h2>${artist.name}</h2>
+  <p>Ascoltatori mensili: ${artist.nb_fan}</p>
+</div>
+  </div>`;
   };
   firstSection();
 

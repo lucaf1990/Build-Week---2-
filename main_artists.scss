@@ -24,11 +24,18 @@ center {
 }
 
 .containerArtist {
+  position: relative;
+  height: 40%;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
   .artist {
-    height: 30%;
     color: white;
-    background-color: red;
     display: flex;
+    position: absolute;
   }
 }
 
