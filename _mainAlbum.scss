@@ -91,3 +91,40 @@
     }
   }
 }
+.thirdSection {
+  margin: 0 10px;
+  display: flex;
+  .cards {
+    cursor: pointer;
+    margin: 5px;
+    padding: 10px;
+    width: 20%;
+    background-color: #2f2b2b;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    border-radius: 3px;
+    &:hover {
+      transform: scale(1.03);
+      color: white;
+      background-color: rgba(77, 71, 71, 0.882);
+    }
+    img {
+      border-radius: 5px;
+    }
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      height: 70px;
+
+      h5 {
+        margin: 10px 5px;
+      }
+      p {
+        font-size: 12px;
+        margin: 0 5px;
+      }
+    }
+  }
+}
