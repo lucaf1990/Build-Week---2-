@@ -20,7 +20,7 @@ window.onload = async () => {
   <div class="album-cont">
   <p><i class="bi bi-patch-check-fill"></i> Artista Verificato</p>
   <a href="./artists.html?idArtist=${artist.id}">
-    <p>${artist.name}</p><h2>${artist.name}</h2></a>
+  <h2>${artist.name}</h2></a>
   <p>Ascoltatori mensili: ${artist.nb_fan}</p>
 </div>
   </div>`;
@@ -114,7 +114,7 @@ window.onload = async () => {
       <img
         src="${album.cover_medium}"
         alt="${album.title}"
-        height="130px"
+        
       />
       <div>
       <a href="./album.html?idAlbum=${album.id}">

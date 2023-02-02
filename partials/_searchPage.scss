@@ -1,7 +1,5 @@
 .search {
-  position: relative;
-  left: -250px;
-
+  margin-left: 20px;
   #searchBar {
     width: 350px;
     border-radius: 3em;
@@ -17,4 +15,9 @@
   position: relative;
   color: black;
   left: -340px;
+}
+
+.topbarRigth {
+  display: flex;
+  align-items: center;
 }

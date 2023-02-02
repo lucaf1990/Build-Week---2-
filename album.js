@@ -78,7 +78,6 @@ window.onload = async () => {
       <img
         src="${album.cover_medium}"
         alt="${album.title}"
-        height="130px"
       />
       <div>
       <a href="./album.html?idAlbum=${album.id}">

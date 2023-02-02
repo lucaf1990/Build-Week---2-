@@ -200,7 +200,6 @@ footer .volume i:hover {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  margin-bottom: 2em;
   width: 100%;
   height: 7%;
   color: white;
@@ -211,7 +210,7 @@ footer .volume i:hover {
   font-size: 1.5em;
   background-color: black;
   border-radius: 100px;
-  margin: 10px;
+  margin: 6px 0 0 10px;
   color: gray;
   text-align: center;
 }
@@ -225,8 +224,8 @@ footer .volume i:hover {
 #absolute ion-icon {
   cursor: pointer;
   position: relative;
-  left: 33px;
-  bottom: -19px;
+  left: 25px;
+  bottom: -8px;
   width: 25px;
   height: 25px;
 }
@@ -563,14 +562,15 @@ body a {
 }
 
 .thirdSection {
-  margin: 0 10px;
+  margin: 20px 10px;
   display: flex;
+  justify-content: center;
 }
 .thirdSection .cards {
   cursor: pointer;
-  margin: 5px;
-  padding: 10px;
-  width: 20%;
+  margin: 10px;
+  padding-bottom: 20px;
+  width: 18%;
   background-color: #2f2b2b;
   display: flex;
   flex-direction: column;
@@ -584,12 +584,14 @@ body a {
 }
 .thirdSection .cards img {
   border-radius: 5px;
+  margin: 10px;
 }
 .thirdSection .cards div {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  height: 70px;
+  justify-content: space-between;
+  height: 100%;
+  margin-left: 5px;
 }
 .thirdSection .cards div h5 {
   margin: 10px 5px;
@@ -711,8 +713,7 @@ tbody img {
 }
 
 .search {
-  position: relative;
-  left: -250px;
+  margin-left: 20px;
 }
 .search #searchBar {
   width: 350px;
@@ -728,6 +729,11 @@ tbody img {
   position: relative;
   color: black;
   left: -340px;
+}
+
+.topbarRigth {
+  display: flex;
+  align-items: center;
 }
 
 a {

@@ -102,13 +102,14 @@ body {
   }
 }
 .thirdSection {
-  margin: 0 10px;
+  margin: 20px 10px;
   display: flex;
+  justify-content: center;
   .cards {
     cursor: pointer;
-    margin: 5px;
-    padding: 10px;
-    width: 20%;
+    margin: 10px;
+    padding-bottom: 20px;
+    width: 18%;
     background-color: #2f2b2b;
     display: flex;
     flex-direction: column;
@@ -121,12 +122,14 @@ body {
     }
     img {
       border-radius: 5px;
+      margin: 10px;
     }
     div {
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
-      height: 70px;
+      justify-content: space-between;
+      height: 100%;
+      margin-left: 5px;
 
       h5 {
         margin: 10px 5px;
