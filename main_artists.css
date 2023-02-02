@@ -2,6 +2,10 @@ center {
   overflow: auto;
   height: 100%;
 }
+center a {
+  text-decoration: none;
+  color: white;
+}
 center::-webkit-scrollbar {
   width: 10px;
   background-color: #121212;
