@@ -107,10 +107,6 @@ footer .volume i:hover {
   padding-left: 20px;
   padding-top: 10px;
 }
-.left a {
-  text-decoration: none;
-  color: grey;
-}
 .left ul {
   padding-left: 0;
 }
@@ -279,17 +275,13 @@ footer .volume i:hover {
   border-radius: 10px;
 }
 
-.container a {
-  text-decoration: none;
-  color: white;
-}
 .container .titles {
   margin: 40px 0 30px 20px;
   color: white;
   font-size: 20px;
 }
 .container .firstSection {
-  height: 350px;
+  height: 250px;
   margin: 0 10px;
   margin-top: 1em;
   display: flex;
@@ -314,8 +306,7 @@ footer .volume i:hover {
 .container .firstSection .bodyFirstSection h1 {
   cursor: pointer;
   margin: 15px 0;
-  font-weight: 700;
-  font-size: 5em;
+  font-weight: 900;
 }
 .container .firstSection .bodyFirstSection h4 {
   cursor: pointer;
@@ -342,7 +333,7 @@ footer .volume i:hover {
   color: white;
   border-radius: 6em;
   border: 0.4px solid gray;
-  padding: 10px 30px;
+  padding: 5px 20px;
   cursor: pointer;
 }
 .container .firstSection .bodyFirstSection .buttonsSection .salva:hover {
@@ -356,7 +347,7 @@ footer .volume i:hover {
   background-color: rgb(66, 255, 66);
   color: black;
   border-radius: 6em;
-  padding: 10px 30px;
+  padding: 5px 20px;
 }
 .container .firstSection .bodyFirstSection .buttonsSection .play:hover {
   transform: scale(1.3);
@@ -372,15 +363,15 @@ footer .volume i:hover {
   cursor: pointer;
   margin: 15px;
   background-color: transparent;
-  color: rgb(169, 169, 169);
+  color: gray;
   border-radius: 6em;
   border: 0.1px solid rgba(128, 128, 128, 0.172);
-  padding: 10px 20px;
-  font-size: 10px;
+  padding: 5px 15px;
+  font-size: 7px;
 }
 .container .firstSection button:hover {
   color: white;
-  transform: scale(1.2);
+  transform: scale(1.3);
 }
 .container .secondSection {
   margin: 15px;
@@ -475,14 +466,15 @@ footer .volume i:hover {
   margin-bottom: 3em !important;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 .center {
   color: white;
   overflow: auto;
   height: 100%;
-}
-.center a {
-  text-decoration: none;
-  color: white;
 }
 .center h2 {
   margin: 1em 0.5em;
@@ -699,5 +691,10 @@ center::-moz-scrollbar-thumb {
 .canzoni_artista {
   display: flex;
   width: 100%;
+  color: white;
+}
+
+a {
+  text-decoration: none;
   color: white;
 }/*# sourceMappingURL=style.css.map */
