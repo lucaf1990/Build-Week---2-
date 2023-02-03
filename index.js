@@ -68,7 +68,7 @@ const thirdSection = async () => {
   let mySongs = [songs[1], songs[12], songs[6], songs[8], songs[0]];
   console.log(mySongs);
   mySongs.forEach(({ album, artist }, i) => {
-    row.innerHTML += `<div class="cards ${i == 4 ? 'nascondiCard' : ' '}">
+    row.innerHTML += `<div class="cards col col-6 col-md-3 ${i == 4 ? 'nascondiCard' : ' '}">
     <img
       src="${album.cover_medium}"
       alt="${album.title}"
