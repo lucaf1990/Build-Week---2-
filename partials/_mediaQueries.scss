@@ -62,7 +62,13 @@
 }
 
 @media screen and(max-width:670px) {
+  footer {
+    justify-content: unset;
 
+    .volume {
+      display: none;
+    }
+  }
   .left,
   #topbar {
     display: none;

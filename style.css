@@ -826,6 +826,12 @@ tbody img {
   }
 }
 @media screen and (max-width: 670px) {
+  footer {
+    justify-content: unset;
+  }
+  footer .volume {
+    display: none;
+  }
   .left,
 #topbar {
     display: none;
