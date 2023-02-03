@@ -59,6 +59,10 @@
 }
 
 @media screen and(max-width:670px) {
+  .nascondiCard {
+    display: none !important;
+  }
+
   .left,
   #topbar {
     display: none;

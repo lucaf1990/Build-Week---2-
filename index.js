@@ -67,8 +67,8 @@ const thirdSection = async () => {
   let row = document.querySelector(".thirdSection");
   let mySongs = [songs[1], songs[12], songs[6], songs[8], songs[0]];
   console.log(mySongs);
-  mySongs.forEach(({ album, artist }) => {
-    row.innerHTML += `<div class="cards">
+  mySongs.forEach(({ album, artist }, i) => {
+    row.innerHTML += `<div class="cards ${i == 4 ? 'nascondiCard' : ' '}">
     <img
       src="${album.cover_medium}"
       alt="${album.title}"
@@ -100,7 +100,7 @@ const fourthSection = async () => {
       let { album, artist } = albums;
       console.log(albums);
       let row = document.querySelector(".fourthSection");
-      row.innerHTML += `<div class="cards">
+      row.innerHTML += `<div class="cards ${i == 4 ? 'nascondiCard' : ' '}">
       <img
         src="${album.cover_medium}"
         alt="${album.title}"
