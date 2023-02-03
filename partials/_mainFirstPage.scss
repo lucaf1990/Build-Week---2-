@@ -1,3 +1,7 @@
+.titolo {
+  font-size: 4.5em;
+}
+
 .center {
   background: linear-gradient((rgb(0, 0, 0), rgb(14, 13, 13), black));
   color: white;
@@ -36,7 +40,7 @@
 
   // prima sezione
   .firstSection {
-    height: 250px;
+    height: 280px;
     margin: 0 10px;
     margin-top: 1em;
     display: flex;
@@ -45,7 +49,7 @@
     background: linear-gradient(
       15deg,
       rgba(0, 0, 0, 1) 0%,
-      rgba(74, 73, 73, 1) 100%
+      rgb(23, 23, 23) 100%
     );
     border-radius: 0.3em;
     .bodyFirstSection {
@@ -54,25 +58,29 @@
       img {
         cursor: pointer;
         margin: 20px;
+        height: 200px;
       }
       p {
-        margin: 20px 0;
+        margin: 15px 0;
         font-size: 10px;
         font-weight: 500;
+        font-size: 0.8em;
       }
       h1 {
         cursor: pointer;
-        margin: 15px 0;
+        margin: 10px 0;
         font-weight: 900;
       }
       h4 {
         cursor: pointer;
         margin: 10px 0 15px;
+        font-size: 1.3em;
       }
 
       h6 {
         cursor: pointer;
-        margin: 20px 0 10px;
+        margin: 10px 0 10px;
+        font-size: 1em;
       }
       h1,
       h4,
@@ -92,7 +100,7 @@
           color: white;
           border-radius: 6em;
           border: 0.4px solid gray;
-          padding: 5px 20px;
+          padding: 8px 20px;
           cursor: pointer;
           &:hover {
             border: 0.4px solid gray;
@@ -101,6 +109,7 @@
         }
         .play {
           font-size: 13px;
+          padding: 8px 20px !important;
           font-weight: bolder;
           margin: 10px 0;
           background-color: rgb(66, 255, 66);
@@ -153,10 +162,10 @@
       justify-content: flex-start;
       border-radius: 0.3em;
       font-size: 10px;
-      background-color: rgba(32, 32, 32, 0.83);
+      background-color: rgba(15, 14, 14, 0.83);
       &:hover {
         transform: scale(1.03);
-        background-color: rgba(37, 35, 35, 0.882);
+        background-color: rgba(39, 37, 37, 0.882);
         .play-icon {
           opacity: 1;
           font-size: 4em;
@@ -197,7 +206,7 @@
       margin: 5px;
       padding: 10px;
       width: 16%;
-      background-color: #2f2b2b;
+      background-color: #141414;
       display: flex;
       flex-direction: column;
       align-content: space-around;
@@ -205,7 +214,7 @@
       &:hover {
         transform: scale(1.03);
         color: white;
-        background-color: rgba(77, 71, 71, 0.882);
+        background-color: rgba(39, 37, 37, 0.882);
       }
       img {
         border-radius: 5px;
@@ -232,4 +241,13 @@
   .cards {
     margin-bottom: 3em !important;
   }
+}
+
+.immagineSfondo {
+  position: absolute;
+  top: 30px;
+  width: 60%;
+  height: 30px;
+  background-color: white;
+  filter: blur(500px) brightness(100%) saturate(200%);
 }

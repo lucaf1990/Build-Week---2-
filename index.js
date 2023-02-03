@@ -11,6 +11,8 @@ const firstSection = async () => {
   let song = await fetchByQuery("flowers");
   console.log(song);
   let mainAlbum = [song[0]];
+  let image = document.querySelector(".immagineSfondo");
+
   mainAlbum.forEach(({ album, title, artist, preview }) => {
     row.innerHTML += `
 
@@ -22,7 +24,7 @@ const firstSection = async () => {
   <div>
     <p>ALBUM</p>
     <a href="./album.html?idAlbum=${album.id}">
-    <h1>${title}</h1></a>
+    <h1 class="titolo">${title}</h1></a>
     <a href="./artists.html?idArtist=${artist.id}">
     <h4>${artist.name}</h4></a>
     <h6>Ascolta il nuovo singolo</h6>
@@ -68,7 +70,7 @@ const thirdSection = async () => {
   let mySongs = [songs[1], songs[12], songs[6], songs[8], songs[0]];
   console.log(mySongs);
   mySongs.forEach(({ album, artist }, i) => {
-    row.innerHTML += `<div class="cards ${i == 4 ? 'nascondiCard' : ' '}">
+    row.innerHTML += `<div class="cards ${i == 4 ? "nascondiCard" : " "}">
     <img
       src="${album.cover_medium}"
       alt="${album.title}"
@@ -100,7 +102,7 @@ const fourthSection = async () => {
       let { album, artist } = albums;
       console.log(albums);
       let row = document.querySelector(".fourthSection");
-      row.innerHTML += `<div class="cards ${i == 4 ? 'nascondiCard' : ' '}">
+      row.innerHTML += `<div class="cards ${i == 4 ? "nascondiCard" : " "}">
       <img
         src="${album.cover_medium}"
         alt="${album.title}"

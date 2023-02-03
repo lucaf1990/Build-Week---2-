@@ -4,6 +4,14 @@ body {
     color: white;
   }
 }
+.immagineSfondoAlbum {
+  position: absolute;
+  top: 30px;
+  width: 60%;
+  height: 50px;
+  background-position-y: center;
+  filter: blur(500px) brightness(100%) saturate(200%);
+}
 
 .center {
   color: white;

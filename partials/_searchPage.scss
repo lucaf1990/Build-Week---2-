@@ -1,5 +1,6 @@
 .search {
   margin-left: 20px;
+  margin-top: 10px;
   #searchBar {
     width: 350px;
     border-radius: 3em;
@@ -9,6 +10,23 @@
       outline: none;
     }
   }
+  label {
+    color: black;
+  }
+}
+
+.card:hover {
+  border: solid 1px green;
+  scale: 1.03;
+}
+
+#resultsContainer {
+  background: linear-gradient(
+    rgba(9, 9, 9, 0.858),
+    rgb(18, 113, 18),
+    rgba(24, 22, 22, 0.708),
+    rgb(43, 156, 43)
+  );
 }
 
 #lente {
@@ -20,4 +38,44 @@
 .topbarRigth {
   display: flex;
   align-items: center;
+}
+
+#hoSonno {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: baseline !important;
+  h5 {
+    padding: 30px;
+    color: green;
+  }
+  p {
+    opacity: 0;
+  }
+
+  .immagineSfondo {
+    position: absolute;
+    top: 30px;
+    width: 60%;
+    height: 30px;
+    background-color: white;
+    filter: blur(500px) brightness(100%) saturate(200%);
+  }
+  #searchIcon {
+    position: relative;
+    top: 30px;
+    font-size: 2em;
+    color: green;
+  }
+  &:hover {
+    scale: 1.05;
+    border: solid 2px green;
+    p {
+      opacity: 1;
+      position: relative;
+      top: 150px;
+      left: 10px;
+      position: absolute;
+      color: green;
+    }
+  }
 }

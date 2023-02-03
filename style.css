@@ -203,7 +203,7 @@ footer .volume i:hover {
   width: 100%;
   height: 7%;
   color: white;
-  background-color: rgba(209, 184, 184, 0.918);
+  background-color: inherit;
 }
 #topbar ion-icon {
   cursor: pointer;
@@ -251,6 +251,10 @@ footer .volume i:hover {
   justify-content: space-between;
 }
 
+.titolo {
+  font-size: 4.5em;
+}
+
 .center {
   background: linear-gradient(rgb(0, 0, 0), rgb(14, 13, 13), black);
   color: white;
@@ -280,13 +284,13 @@ footer .volume i:hover {
   font-size: 20px;
 }
 .container .firstSection {
-  height: 250px;
+  height: 280px;
   margin: 0 10px;
   margin-top: 1em;
   display: flex;
   justify-content: space-between;
   background: rgb(0, 0, 0);
-  background: linear-gradient(15deg, rgb(0, 0, 0) 0%, rgb(74, 73, 73) 100%);
+  background: linear-gradient(15deg, rgb(0, 0, 0) 0%, rgb(23, 23, 23) 100%);
   border-radius: 0.3em;
 }
 .container .firstSection .bodyFirstSection {
@@ -296,24 +300,28 @@ footer .volume i:hover {
 .container .firstSection .bodyFirstSection img {
   cursor: pointer;
   margin: 20px;
+  height: 200px;
 }
 .container .firstSection .bodyFirstSection p {
-  margin: 20px 0;
+  margin: 15px 0;
   font-size: 10px;
   font-weight: 500;
+  font-size: 0.8em;
 }
 .container .firstSection .bodyFirstSection h1 {
   cursor: pointer;
-  margin: 15px 0;
+  margin: 10px 0;
   font-weight: 900;
 }
 .container .firstSection .bodyFirstSection h4 {
   cursor: pointer;
   margin: 10px 0 15px;
+  font-size: 1.3em;
 }
 .container .firstSection .bodyFirstSection h6 {
   cursor: pointer;
-  margin: 20px 0 10px;
+  margin: 10px 0 10px;
+  font-size: 1em;
 }
 .container .firstSection .bodyFirstSection h1:hover,
 .container .firstSection .bodyFirstSection h4:hover,
@@ -332,7 +340,7 @@ footer .volume i:hover {
   color: white;
   border-radius: 6em;
   border: 0.4px solid gray;
-  padding: 5px 20px;
+  padding: 8px 20px;
   cursor: pointer;
 }
 .container .firstSection .bodyFirstSection .buttonsSection .salva:hover {
@@ -341,6 +349,7 @@ footer .volume i:hover {
 }
 .container .firstSection .bodyFirstSection .buttonsSection .play {
   font-size: 13px;
+  padding: 8px 20px !important;
   font-weight: bolder;
   margin: 10px 0;
   background-color: rgb(66, 255, 66);
@@ -387,11 +396,11 @@ footer .volume i:hover {
   justify-content: flex-start;
   border-radius: 0.3em;
   font-size: 10px;
-  background-color: rgba(32, 32, 32, 0.83);
+  background-color: rgba(15, 14, 14, 0.83);
 }
 .container .secondSection .card:hover {
   transform: scale(1.03);
-  background-color: rgba(37, 35, 35, 0.882);
+  background-color: rgba(39, 37, 37, 0.882);
 }
 .container .secondSection .card:hover .play-icon {
   opacity: 1;
@@ -428,7 +437,7 @@ footer .volume i:hover {
   margin: 5px;
   padding: 10px;
   width: 16%;
-  background-color: #2f2b2b;
+  background-color: #141414;
   display: flex;
   flex-direction: column;
   align-content: space-around;
@@ -438,7 +447,7 @@ footer .volume i:hover {
 .container .fourthSection .cards:hover {
   transform: scale(1.03);
   color: white;
-  background-color: rgba(77, 71, 71, 0.882);
+  background-color: rgba(39, 37, 37, 0.882);
 }
 .container .thirdSection .cards img,
 .container .fourthSection .cards img {
@@ -465,9 +474,27 @@ footer .volume i:hover {
   margin-bottom: 3em !important;
 }
 
+.immagineSfondo {
+  position: absolute;
+  top: 30px;
+  width: 60%;
+  height: 30px;
+  background-color: white;
+  filter: blur(500px) brightness(100%) saturate(200%);
+}
+
 body a {
   text-decoration: none;
   color: white;
+}
+
+.immagineSfondoAlbum {
+  position: absolute;
+  top: 30px;
+  width: 60%;
+  height: 50px;
+  background-position-y: center;
+  filter: blur(500px) brightness(100%) saturate(200%);
 }
 
 .center {
@@ -604,6 +631,14 @@ body a {
   color: white;
 }
 
+.immagineSfondoArtist {
+  position: absolute;
+  top: 30px;
+  width: 60%;
+  height: 50px;
+  filter: blur(500px) brightness(100%) saturate(200%);
+}
+
 center {
   overflow: auto;
   height: 100%;
@@ -712,6 +747,7 @@ tbody img {
 
 .search {
   margin-left: 20px;
+  margin-top: 10px;
 }
 .search #searchBar {
   width: 350px;
@@ -721,6 +757,18 @@ tbody img {
 }
 .search #searchBar:focus {
   outline: none;
+}
+.search label {
+  color: black;
+}
+
+.card:hover {
+  border: solid 1px green;
+  scale: 1.03;
+}
+
+#resultsContainer {
+  background: linear-gradient(rgba(9, 9, 9, 0.858), rgb(18, 113, 18), rgba(24, 22, 22, 0.708), rgb(43, 156, 43));
 }
 
 #lente {
@@ -732,6 +780,45 @@ tbody img {
 .topbarRigth {
   display: flex;
   align-items: center;
+}
+
+#hoSonno {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: baseline !important;
+}
+#hoSonno h5 {
+  padding: 30px;
+  color: green;
+}
+#hoSonno p {
+  opacity: 0;
+}
+#hoSonno .immagineSfondo {
+  position: absolute;
+  top: 30px;
+  width: 60%;
+  height: 30px;
+  background-color: white;
+  filter: blur(500px) brightness(100%) saturate(200%);
+}
+#hoSonno #searchIcon {
+  position: relative;
+  top: 30px;
+  font-size: 2em;
+  color: green;
+}
+#hoSonno:hover {
+  scale: 1.05;
+  border: solid 2px green;
+}
+#hoSonno:hover p {
+  opacity: 1;
+  position: relative;
+  top: 150px;
+  left: 10px;
+  position: absolute;
+  color: green;
 }
 
 @media screen and (max-width: 1000px) {

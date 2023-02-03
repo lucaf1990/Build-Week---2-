@@ -4,6 +4,14 @@ body {
     color: white;
   }
 }
+.immagineSfondoArtist {
+  position: absolute;
+  top: 30px;
+  width: 60%;
+  height: 50px;
+
+  filter: blur(500px) brightness(100%) saturate(200%);
+}
 
 center {
   overflow: auto;
