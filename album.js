@@ -54,7 +54,7 @@ window.onload = async () => {
 
   //terza sezione
   const thirdSection = async () => {
-    let row = document.querySelector(".thirdSection");
+    let row = document.querySelector(".thirdSectionAlbum");
     let res = await fetch(
       "https://striveschool-api.herokuapp.com/api/deezer/album/" + id
     );
