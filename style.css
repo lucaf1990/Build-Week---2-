@@ -387,11 +387,11 @@ footer .volume i:hover {
   justify-content: flex-start;
   border-radius: 0.3em;
   font-size: 10px;
-  background-color: rgba(52, 47, 47, 0.83);
+  background-color: rgba(32, 32, 32, 0.83);
 }
 .container .secondSection .card:hover {
   transform: scale(1.03);
-  background-color: rgba(77, 71, 71, 0.882);
+  background-color: rgba(37, 35, 35, 0.882);
 }
 .container .secondSection .card:hover .play-icon {
   opacity: 1;
