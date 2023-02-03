@@ -102,14 +102,12 @@ body {
   }
 }
 .thirdSectionAlbum {
-  margin: 20px 10px;
-  display: flex;
   justify-content: center;
+  width: 99%;
   .cards {
     cursor: pointer;
     margin: 10px;
     padding-bottom: 20px;
-    width: 18%;
     background-color: #2f2b2b;
     display: flex;
     flex-direction: column;

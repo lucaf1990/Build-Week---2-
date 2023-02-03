@@ -70,12 +70,12 @@ window.onload = async () => {
       let row2 = document.querySelector(".braniCheTiPiacciono");
       row2.innerHTML = `<h4>Brani che ti piacciono</h4>
       <div class="likes row">
-        <div class="col col-3 mt-2">
+        <div class="col col-md-3 mt-2">
           <img src="${mySongs[i].artist.picture_small}" alt="${
         mySongs[i].artist.name
       }" class="rounded-circle"/>
         </div>
-        <div class=" col col-9 mt-2">
+        <div class=" col col-md-9 mt-2">
             <h6>Hai messo mi piace a ${Math.floor(
               Math.random() * 20
             )} brani</h6>
@@ -110,7 +110,7 @@ window.onload = async () => {
     ];
     console.log(myAlbums);
     myAlbums.forEach(({ album, artist }) => {
-      row.innerHTML += `<div class="cards ">
+      row.innerHTML += `<div class="cards col col-6 ">
       <img
         src="${album.cover_medium}"
         alt="${album.title}"
