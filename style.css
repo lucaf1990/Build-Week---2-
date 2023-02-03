@@ -745,6 +745,44 @@ tbody img {
   height: 40px;
 }
 
+.thirdSectionArtist {
+  justify-content: center;
+  width: 99%;
+}
+.thirdSectionArtist .cards {
+  cursor: pointer;
+  margin: 10px;
+  padding-bottom: 20px;
+  background-color: #2f2b2b;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  border-radius: 3px;
+}
+.thirdSectionArtist .cards:hover {
+  transform: scale(1.03);
+  color: white;
+  background-color: rgba(77, 71, 71, 0.882);
+}
+.thirdSectionArtist .cards img {
+  border-radius: 5px;
+  margin: 10px;
+}
+.thirdSectionArtist .cards div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  margin-left: 5px;
+}
+.thirdSectionArtist .cards div h5 {
+  margin: 10px 5px;
+}
+.thirdSectionArtist .cards div p {
+  font-size: 12px;
+  margin: 0 5px;
+}
+
 .search {
   margin-left: 20px;
   margin-top: 10px;
@@ -835,6 +873,9 @@ tbody img {
   }
 }
 @media screen and (max-width: 796px) {
+  .nascondiCard {
+    display: none !important;
+  }
   .thirdSection,
 .fourthSection {
     flex-wrap: wrap;
@@ -872,8 +913,11 @@ tbody img {
   }
 }
 @media screen and (max-width: 670px) {
-  .nascondiCard {
-    display: none !important;
+  footer {
+    justify-content: unset;
+  }
+  footer .volume {
+    display: none;
   }
   .left,
 #topbar {

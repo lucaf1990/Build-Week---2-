@@ -90,7 +90,7 @@ window.onload = async () => {
   // sezione 3
   //terza sezione
   const thirdSection = async () => {
-    let row = document.querySelector(".thirdSection");
+    let row = document.querySelector(".thirdSectionArtist");
     let res = await fetch(
       "https://striveschool-api.herokuapp.com/api/deezer/artist/" + id
     );
@@ -109,8 +109,10 @@ window.onload = async () => {
       data2.data[15],
     ];
     console.log(myAlbums);
-    myAlbums.forEach(({ album, artist }) => {
-      row.innerHTML += `<div class="cards col col-6 ">
+    myAlbums.forEach(({ album, artist }, i) => {
+      row.innerHTML += `<div class="cards col col-5 col-md-2 ${
+        i == 4 ? "nascondiCard" : " "
+      }">
       <img
         src="${album.cover_medium}"
         alt="${album.title}"
