@@ -44,7 +44,7 @@ window.onload = async () => {
     console.log(data2);
     let mySongs = [
       data2.data[0],
-      data2.data[2],
+      data2.data[6],
       data2.data[1],
       data2.data[3],
       data2.data[4],
@@ -102,11 +102,11 @@ window.onload = async () => {
     let data2 = await res2.json();
     console.log(data2);
     let myAlbums = [
-      data2.data[4],
-      data2.data[2],
-      data2.data[10],
+      data2.data[12],
+      data2.data[7],
+      data2.data[14],
       data2.data[8],
-      data2.data[15],
+      data2.data[20],
     ];
     console.log(myAlbums);
     myAlbums.forEach(({ album, artist }, i) => {

@@ -122,10 +122,9 @@ let cubi = () => {
   let prova = [
     "Pop",
     "Rock",
-    "Hip Hop",
+    "HipHop",
     "Jazz",
     "Classical",
-    "R&B",
     "Country",
     "Blues",
     "Soul",
@@ -138,7 +137,7 @@ let cubi = () => {
   let paginaIniziale = "";
   for (let i = 0; i < prova.length; i++) {
     paginaIniziale += `
-      <div id="hoSonno" class="card m-3 bg-black " style="width: 10rem;  height:12rem">
+      <div id="hoSonno" class="card m-3 bg-info-subtle " style="width: 10rem;  height:12rem">
       <i id="searchIcon" class="bi bi-spotify"></i>
         <h5 class="card-title">${prova[i]}</h5>
         <p> Feeling like ${prova[i]}

@@ -8,10 +8,9 @@ const fetchByQuery = async (query) => {
 
 const firstSection = async () => {
   let row = document.querySelector(".bodyFirstSection");
-  let song = await fetchByQuery("flowers");
+  let song = await fetchByQuery("wonderwall");
   console.log(song);
   let mainAlbum = [song[0]];
-  let image = document.querySelector(".immagineSfondo");
 
   mainAlbum.forEach(({ album, title, artist, preview }) => {
     row.innerHTML += `
@@ -38,10 +37,10 @@ const firstSection = async () => {
 };
 
 const secondSection = async () => {
-  let songs = await fetchByQuery("dance");
+  let songs = await fetchByQuery("salmo");
   console.log(songs);
   let row = document.querySelector(".secondSection");
-  let mySongs = [songs[4], songs[2], songs[10], songs[8], songs[15], songs[20]];
+  let mySongs = [songs[4], songs[3], songs[10], songs[8], songs[15], songs[20]];
   console.log(mySongs);
   mySongs.forEach(({ album, title, link }) => {
     row.innerHTML += `<div class="card" >
@@ -67,7 +66,7 @@ const thirdSection = async () => {
   let songs = await fetchByQuery("Caparezza");
   console.log(songs);
   let row = document.querySelector(".thirdSection");
-  let mySongs = [songs[1], songs[12], songs[6], songs[8], songs[0]];
+  let mySongs = [songs[1], songs[12], songs[9], songs[8], songs[0]];
   console.log(mySongs);
   mySongs.forEach(({ album, artist }, i) => {
     row.innerHTML += `<div class="cards ${i == 4 ? "nascondiCard" : " "}">
@@ -88,9 +87,9 @@ const thirdSection = async () => {
 const fourthSection = async () => {
   try {
     let arrayArtisti = [
-      "Madonna",
-      "lost frequencies",
-      "Dua Lipa",
+      "fulminacci",
+      "frahquintale",
+      "Redhotchilipeppers",
       "eminem",
       "oasis",
     ];

@@ -67,7 +67,7 @@ window.onload = async () => {
     console.log(data2);
     let myAlbums = [
       data2.data[4],
-      data2.data[2],
+      data2.data[3],
       data2.data[10],
       data2.data[8],
       data2.data[15],
@@ -75,7 +75,7 @@ window.onload = async () => {
     console.log(myAlbums);
     myAlbums.forEach(({ album, artist }, i) => {
       row.innerHTML += `<div class="cards col col-5 col-md-2 ${
-        i == 4 ? 'nascondiCard' : ' '
+        i == 4 ? "nascondiCard" : " "
       }">
       <img
         src="${album.cover_medium}"
