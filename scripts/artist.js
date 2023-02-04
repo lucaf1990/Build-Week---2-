@@ -120,9 +120,9 @@ window.onload = async () => {
       />
       <div>
       <a href="./album.html?idAlbum=${album.id}">
-      <h5>${album.title}</h5></a>
+      <h5 class="text-truncate">${album.title}</h5></a>
       <a href="./artists.html?idArtist=${artist.id}">
-      <p>${artist.name}</p></a>
+      <p class="text-truncate">${artist.name}</p></a>
       </div>
     </div>`;
     });
